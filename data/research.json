@@ -1,0 +1,1427 @@
+{
+  "generated_at": "2026-06-09T07:09:03+00:00",
+  "publications": [
+    {
+      "key": "jte-2025-1661",
+      "title": "Sentiment Prediction Based on Deep Learning for Intelligent E-Learning Systems",
+      "doi": "10.54644/jte.2025.1661",
+      "ojs_url": "https://jte.edu.vn/index.php/jte/article/view/1661",
+      "journal": "Journal of Technical Education Science (JTE)",
+      "year": 2025,
+      "lead_author": true,
+      "authors_display": "Nguyen, A.-T. P.; Duong, D.-K.; Hoang, V.-D.",
+      "ojs": {
+        "url": "https://jte.edu.vn/index.php/jte/article/view/1661",
+        "status": 200,
+        "downloads_int": 268,
+        "downloads_raw": "268"
+      },
+      "semantic_scholar": {
+        "status": 429,
+        "available": false,
+        "raw": "{\"message\": \"Too Many Requests. Please wait and try again or apply for a key for higher rate limits. https://www.semanticscholar.org/product/api#api-key-form\", \"code\": \"429\"}",
+        "citing_papers": []
+      },
+      "opencitations": {
+        "status": 200,
+        "count": 0,
+        "citing_dois": []
+      },
+      "crossref_events": {
+        "status": 0,
+        "events": []
+      },
+      "google_scholar": {
+        "available": false,
+        "reason": "skipped (--no-scholar)"
+      },
+      "headline_citation_count": 0
+    },
+    {
+      "key": "jte-2024-1514",
+      "title": "Development of Code Evaluation System based on Abstract Syntax Tree",
+      "doi": "10.54644/jte.2024.1514",
+      "ojs_url": "https://jte.edu.vn/index.php/jte/article/view/1514",
+      "journal": "Journal of Technical Education Science (JTE)",
+      "year": 2024,
+      "lead_author": true,
+      "authors_display": "Nguyen, A.-T. P.; Hoang, V.-D.",
+      "ojs": {
+        "url": "https://jte.edu.vn/index.php/jte/article/view/1514",
+        "status": 200,
+        "downloads_int": 1094,
+        "downloads_raw": "1.1K"
+      },
+      "semantic_scholar": {
+        "status": 200,
+        "available": true,
+        "paper_id": "8b96ed17cc1795bf24ce33cf8cd45ec0a2f1666a",
+        "title": "Development of Code Evaluation System based on Abstract Syntax Tree",
+        "year": 2024,
+        "venue": "Journal of Technical Education Science",
+        "citation_count": 13,
+        "influential_citation_count": 0,
+        "authors": [
+          "Anh-Tu Phuong Nguyen",
+          "Van-Dung Hoang"
+        ],
+        "citing_papers": [
+          {
+            "title": "Integrating Expert Knowledge With Automated Knowledge Component Extraction for Student Modeling",
+            "venue": "User Modeling, Adaptation, and Personalization",
+            "year": 2025,
+            "citationCount": 4,
+            "doi": "10.1145/3699682.3728348",
+            "arxiv": null,
+            "authors": [
+              "Rafaella Sampaio de Alencar",
+              "Mehmet Arif Demirtaş",
+              "Adittya Soukarjya Saha",
+              "Yang Shi",
+              "Peter Brusilovsky"
+            ],
+            "is_high_impact": true,
+            "impact_tags": [
+              "ACM"
+            ],
+            "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3699682.3728348",
+            "pdf_source": "unpaywall",
+            "pdf_status": "ok",
+            "contexts": [
+              {
+                "page": 2,
+                "match": "[19]",
+                "snippet": "erconnected KCs, such as conditionals, vari- ables, etc. Nevertheless, a recent replication of that study suggested that AST-based approaches could produce plausible KCs, given that students are provided with sufficient practice problems [5]. While AST-based KCs have had varied results, ASTs have been widely used in automated code analysis efforts [19]. For example, Rivers used ASTs to identify each syntax structure in a student’s submission and compare it to a correct solution [ 28]. Nutbrown and Higgins discussed how the use of ASTs offered a degree of abstraction that made it easy to search for"
+              }
+            ],
+            "reference_entry": {
+              "label": "[19]",
+              "label_num": 19,
+              "kind": "numbered",
+              "ref_text": "vo, and Andrew Olney (Eds.). International Educational Data Mining Society, 334–335. http://www.educationaldatamining.org/EDM2013/papers/rn_paper_ 68.pdf [18] Andy Nguyen, Christopher Piech, Jonathan Huang, and Leonidas Guibas. 2014. Codewebs: scalable homework search for massive open online programming courses. In Proceedings of the 23rd international conference on World wide web . 491–502. [19] Anh-Tu Phuong Nguyen, Van-Dung Hoang, et al. 2024. Development of Code Evaluation System based on Abstract Syntax Tree. Journal of Technical Education Science 19, Special Issue 01 (2024), 15–24. [20] Rose Niousha, Muntasir Hoq, Bita Akram, and Narges Norouzi. 2024. Use of Large Language Models for Extracting Knowledge Components in CS1 Programming",
+              "ref_pages": [
+                6
+              ]
+            },
+            "pages_total": 6
+          },
+          {
+            "title": "Application of Blockchain Technologies in Verification of Software Metrics",
+            "venue": "Applied Sciences",
+            "year": 2025,
+            "citationCount": 1,
+            "doi": "10.3390/app15105519",
+            "arxiv": null,
+            "authors": [
+              "Jovan S. Milutinović",
+              "P. Milić",
+              "V. Milenkovic",
+              "E. Mekić",
+              "A. Matović"
+            ],
+            "is_high_impact": true,
+            "impact_tags": [
+              "MDPI"
+            ],
+            "pdf_url": "https://www.mdpi.com/2076-3417/15/10/5519/pdf?version=1747303368",
+            "pdf_source": "unpaywall",
+            "pdf_status": "fetch_failed",
+            "contexts": [],
+            "reference_entry": null,
+            "pages_total": null
+          },
+          {
+            "title": "Enhancing Cybersecurity Education using Scoring Engines: A Practical Approach to Hands-On Learning and Feedback",
+            "venue": "Technical Symposium on Computer Science Education",
+            "year": 2025,
+            "citationCount": 1,
+            "doi": "10.1145/3641554.3701905",
+            "arxiv": null,
+            "authors": [
+              "Christopher Morales-Gonzalez",
+              "Matthew Harper",
+              "Pranathi Rayavaram",
+              "Sashank Narain",
+              "Xinwen Fu"
+            ],
+            "is_high_impact": true,
+            "impact_tags": [
+              "ACM"
+            ],
+            "pdf_url": "https://doi.org/10.1145/3641554.3701905",
+            "pdf_source": "unpaywall",
+            "pdf_status": "fetch_failed",
+            "contexts": [],
+            "reference_entry": null,
+            "pages_total": null
+          },
+          {
+            "title": "NLP-Powered Test Case Generation from Function Description – A Cross-Language Approach",
+            "venue": "2025 3rd International Conference on Computational Intelligence and Network Systems (CINS)",
+            "year": 2025,
+            "citationCount": 0,
+            "doi": "10.1109/CINS67018.2025.11412018",
+            "arxiv": null,
+            "authors": [
+              "Jonah Varghese Kachirackal",
+              "Vijayakumar Balakrishnan"
+            ],
+            "is_high_impact": true,
+            "impact_tags": [
+              "IEEE"
+            ],
+            "pdf_url": null,
+            "pdf_source": null,
+            "pdf_status": "not_oa",
+            "contexts": [],
+            "reference_entry": null,
+            "pages_total": null
+          },
+          {
+            "title": "NLG Feedback System",
+            "venue": "International Conference on Developments in eSystems Engineering",
+            "year": 2025,
+            "citationCount": 0,
+            "doi": "10.1109/DeSE68208.2025.11368221",
+            "arxiv": null,
+            "authors": [
+              "Oluwatoyin Chinell Olotu",
+              "Hoshang Kolivand",
+              "R. Niskanen",
+              "Omar A. Aldhaibani",
+              "S. Naqvi"
+            ],
+            "is_high_impact": true,
+            "impact_tags": [
+              "IEEE"
+            ],
+            "pdf_url": null,
+            "pdf_source": null,
+            "pdf_status": "not_oa",
+            "contexts": [],
+            "reference_entry": null,
+            "pages_total": null
+          },
+          {
+            "title": "Pseudocode to Python - A Compiler Approach",
+            "venue": "2024 8th International Conference on Computational System and Information Technology for Sustainable Solutions (CSITSS)",
+            "year": 2024,
+            "citationCount": 0,
+            "doi": "10.1109/CSITSS64042.2024.10816767",
+            "arxiv": null,
+            "authors": [
+              "M. P",
+              "P. Syam Prasad",
+              "N. Sumanth Reddy",
+              "Meena Belwal"
+            ],
+            "is_high_impact": true,
+            "impact_tags": [
+              "IEEE"
+            ],
+            "pdf_url": null,
+            "pdf_source": null,
+            "pdf_status": "not_oa",
+            "contexts": [],
+            "reference_entry": null,
+            "pages_total": null
+          },
+          {
+            "title": "Smart Contracts in the Real World: A Statistical Exploration of External Data Dependencies",
+            "venue": "arXiv.org",
+            "year": 2024,
+            "citationCount": 31,
+            "doi": "10.48550/arXiv.2406.13253",
+            "arxiv": "2406.13253",
+            "authors": [
+              "Yishun Wang",
+              "Xiaoqi Li",
+              "Wenkai Li",
+              "Xin Wang"
+            ],
+            "is_high_impact": false,
+            "impact_tags": [],
+            "pdf_url": "https://arxiv.org/pdf/2406.13253",
+            "pdf_source": "arxiv",
+            "pdf_status": "ok",
+            "contexts": [
+              {
+                "page": 2,
+                "match": "[17, 38]",
+                "snippet": "ia a web crawler. We have excluded contracts that are outdated or contain syntax errors. Specifically, upon reviewing 240 smart contract source codes that interact with external data, we have compiled a keyword list titled \"ora- cle_services,\" encompassing pertinent contract and function names. Fur- thermore, employing Abstract Syntax Trees (ASTs) [17, 38], a tree-like data structure extensively utilized in compilers and interpreters to represent the abstract syntax structure of programming language code. We then com- pared the 9,356 contracts against the \"oracle_services\" list, determining the number"
+              }
+            ],
+            "reference_entry": {
+              "label": "[38]",
+              "label_num": 38,
+              "kind": "numbered",
+              "ref_text": "[38] Anh-Tu Phuong Nguyen, Van-Dung Hoang, et al. Development of code evaluation system based on abstract syntax tree.Journal of Technical Education Science, 19(Special Issue 01):15–24, 2024. 1 [39] Thanh Linh Nguyen, Lam Nguyen, Thong Hoang, Dilum Bandara, Qin Wang, Qinghua Lu, Xiwei Xu, Liming Zhu, and Shiping Chen. Blockchain-empowered trustworthy da",
+              "ref_pages": [
+                25
+              ]
+            },
+            "pages_total": 27
+          },
+          {
+            "title": "A Comparative Hybrid Approach for Python Bug Detection Using Syntactic Features, Random Forest, and Neural Network",
+            "venue": "Journal",
+            "year": 2025,
+            "citationCount": 4,
+            "doi": "10.21512/commit.v19i2.13183",
+            "arxiv": null,
+            "authors": [
+              "Bahtiar Imran",
+              "Erfan Wahyudi",
+              "Selamet Riadi",
+              "Zumratul Muahidin",
+              "Surni Erniwati",
+              "Wenti Wahyuni"
+            ],
+            "is_high_impact": false,
+            "impact_tags": [],
+            "pdf_url": "https://journal.binus.ac.id/index.php/commit/article/download/13183/5506",
+            "pdf_source": "unpaywall",
+            "pdf_status": "no_match",
+            "contexts": [],
+            "reference_entry": null,
+            "pages_total": 10
+          },
+          {
+            "title": "Abstract Syntax Tree Model for Minimizing False Negative in Semantic Evaluation of Python Fill-in-the-Blank",
+            "venue": "JOURNAL OF APPLIED INFORMATICS AND COMPUTING",
+            "year": 2025,
+            "citationCount": 1,
+            "doi": "10.30871/jaic.v9i6.11090",
+            "arxiv": null,
+            "authors": [
+              "U. Nurhasan",
+              "D. D. Prasetya",
+              "S. Patmanthara"
+            ],
+            "is_high_impact": false,
+            "impact_tags": [],
+            "pdf_url": "https://jurnal.polibatam.ac.id/index.php/JAIC/article/download/11090/3157",
+            "pdf_source": "unpaywall",
+            "pdf_status": "ok",
+            "contexts": [
+              {
+                "page": 2,
+                "match": "[9]",
+                "snippet": "enarios involving FIB. No other work leverages AST as a lightweight, efficient structural filter in automated assessment systems. Moreover, there is still no fully developed approach that pairs AST with execution results and expert critiques alongside one another, in a coherent fashion, to demonstrate semantic equivalence across student work [9]. This paper outlines a Lightweight and Valid Semantic Triangulation Model, which is directed towards automating FIB assessments within the field of Python training. The model in this instance looks to AST as a primary structural filter with exe"
+              }
+            ],
+            "reference_entry": {
+              "label": "[9]",
+              "label_num": 9,
+              "kind": "numbered",
+              "ref_text": "e Generation Tool Using Generative  Artificial Intelligence for Element Fill-in-the-Blank Problems in a  Java Programming Learning Assistant System,” Electron., vol. 14,  no. 11, pp. 1–27, 2025, doi: 10.3390/electronics14112261.  [9] A.-T. P. Nguyen and V. -D. Hoang, “Development of Code  Evaluation System based on Abstract Syntax Tree,” J. Tech. Educ.  Sci., vol. 19, no. 1, pp. 15–24, 2024, doi: 10.54644/jte.2024.1514.  [10] D. R. Fudholi and A. Capiluppi, “Artificial intelligence for source  code understanding tasks: A systematic mapping study,” Inf. Softw.  Technol., vol. 189, p. 107915, 2026, doi:  https://doi.org/10.1016/j.infsof.2025.107915.  [11] Geetika, N. Kaur, and A. Kaur, “A Semantic -driven approach to  detect Type -4 code clon",
+              "ref_pages": [
+                7
+              ]
+            },
+            "pages_total": 7
+          },
+          {
+            "title": "SemetonBug: A Machine Learning Model for Automatic Bug Detection in Python Code Based on Syntactic Analysis",
+            "venue": "Jurnal Informatika",
+            "year": 2025,
+            "citationCount": 1,
+            "doi": "10.31294/inf.v12i2.25340",
+            "arxiv": null,
+            "authors": [
+              "Bahtiar Imran",
+              "Selamet Riadi",
+              "Emi Suryadi",
+              "M. Zulpahmi",
+              "Zaeniah Zaeniah",
+              "Erfan Wahyudi"
+            ],
+            "is_high_impact": false,
+            "impact_tags": [],
+            "pdf_url": "https://ejournal.bsi.ac.id/ejurnal/index.php/ji/article/download/25340/pdf",
+            "pdf_source": "unpaywall",
+            "pdf_status": "ok",
+            "contexts": [
+              {
+                "page": 2,
+                "match": "Nguyen & Hoang, 2024",
+                "snippet": "learning model to recognize structural patterns in the code and differentiate between bugged and non -bugged files. If a SyntaxError is encountered during AST parsing , the file is skipped to ensure the training process remains uninterrupted. (Nguyen & Hoang, 2024). 2.3. Formulas Used The following formulas were applied to extract structural features from the Python code using Abstract Syntax Tree (AST): Number of functions: 𝐹 = ∑ 𝐹𝑢𝑛𝑐𝑡𝑖𝑜𝑛𝐷𝑒𝑓 Number of classes: C=∑ ClassDef Number of declared varia"
+              }
+            ],
+            "reference_entry": {
+              "label": "Nguyen",
+              "kind": "author-year",
+              "ref_text": "B., & Mondal, D.  (2025). Feature transformation for improved  software bug detection and commit  classification. Journal of Systems and  Software, 219(July 2024), 112205.  https://doi.org/10.1016/j.jss.2024.112205  Nguyen, A.-T. P., & Hoang, V.-D. (2024).  Development of Code Evaluation System  based on Abstract Syntax Tree. Journal of  Technical Education Science, 19(1), 15–24.  https://doi.org/10.54644/jte.2024.1514  P, R., & Kambli, P. (2020). Analysis on Detecting  a Bug in a Software using Machine  Learning. International Journal of Recent  Technology and Engineering (IJRTE), 9(2),  1195–1199.  https://doi.org/10.35940/ijrte.b4119.079220  Shukla, A., Hudemann, K. N., Vági, Z., Hügerich,  L., Smaragdakis, G., Hecker, A., Schmid,  S., &",
+              "ref_pages": [
+                6
+              ]
+            },
+            "pages_total": 6
+          },
+          {
+            "title": "Analisis Gamifikasi Fill-in-the-Blank dengan Evaluasi Otomatis Abstract Syntax Tree Pada Pembelajaran Python",
+            "venue": "Jutisi : Jurnal Ilmiah Teknik Informatika dan Sistem Informasi",
+            "year": 2026,
+            "citationCount": 0,
+            "doi": "10.35889/jutisi.v14i3.3250",
+            "arxiv": null,
+            "authors": [
+              "Margaretha Violina Putri",
+              "Usman Nurhasan",
+              "Hendra Pradibta"
+            ],
+            "is_high_impact": false,
+            "impact_tags": [],
+            "pdf_url": "https://ojs.stmik-banjarbaru.ac.id/index.php/jutisi/article/download/3250/1608",
+            "pdf_source": "unpaywall",
+            "pdf_status": "ok",
+            "contexts": [
+              {
+                "page": 2,
+                "match": "[7]",
+                "snippet": "tax Tree (AST), yang mampu menganalisis struktur kode berdasarkan makna semantik, bukan sekadar pencocokan string. Berbeda dengan metode string matching yang hanya menilai kesamaan karakter atau kata, AST merepresentasikan kode dalam bentuk pohon sintaksis, sehing ga dapat mendeteksi kesetaraan lo gika meskipun sintaks penulisannya bervariasi [7]. Pada Gambar 1 akan ditunjukkan contoh kode program Python. # Jawaban 1 for i in range(5): print(i) # Jawaban 2 for angka in range(0,5): print(angka) Gambar 1. Contoh Kode Program Python. Sebagai ilustrasi, jawaban mahasiswa terse"
+              }
+            ],
+            "reference_entry": {
+              "label": "[7]",
+              "label_num": 7,
+              "kind": "numbered",
+              "ref_text": "of Multiple -Choice Fill -in-the-Blank Programming Learning Tasks and the  Appropriateness of Their Difficulty Level,” Information Engineering Express, vol. 8, no. 2, p.  1, 2022, doi: 10.52731/iee.v8.i2.623.  [7] A.-T. P. Nguyen dan V. -D. Hoang, “Development of Code Evaluation System based on  Abstract Syntax Tree,” Journal of Technical Education Science , vol. 19, no. 1, pp. 15–24,  2024, doi: 10.54644/jte.2024.1514.  [8] M. Othman, A. Osman, S. Z. Ahmad, dan N. Abdullah, “Integrating Segmenting and  Gamification Principles in the Design of Interactive Gamified Programming Assessments for  Low Achievers,” Turkish Online Journal of Distance Education, vol. 25, no. 3, pp. 167–183,  2024, doi: 10.17718/TOJDE.1315427.  [9] M. N. Maskuri, H.",
+              "ref_pages": [
+                13
+              ]
+            },
+            "pages_total": 14
+          },
+          {
+            "title": "Sentiment Prediction Based on Deep Learning for Intelligent E-Learning Systems",
+            "venue": "Journal of Technical Education Science",
+            "year": 2025,
+            "citationCount": 0,
+            "doi": "10.54644/jte.2025.1661",
+            "arxiv": null,
+            "authors": [
+              "Anh-Tu Phuong Nguyen",
+              "Duc-Khai Duong",
+              "Van-Dung Hoang"
+            ],
+            "is_high_impact": false,
+            "impact_tags": [],
+            "pdf_url": "https://jte.edu.vn/index.php/jte/article/download/1661/1405",
+            "pdf_source": "unpaywall",
+            "pdf_status": "ref_only",
+            "contexts": [],
+            "reference_entry": {
+              "label": "Nguyen",
+              "kind": "author-year",
+              "ref_text": "ISSN: 2615-9740  JOURNAL OF TECHNICAL EDUCATION SCIENCE  Ho Chi Minh City University of Technology and Education  Website: https://jte.edu.vn  Email: jte@hcmute.edu.vn      JTE, Volume 20, Issue 03, 08/2025 16    ll  Sentiment Prediction Based on Deep Learning for Intelligent  E-Learning Systems  Anh-Tu Phuong Nguyen , Duc-Khai Duong , Van-Dung Hoang*   Ho Chi Minh City University of Technology and Education, Vietnam  *Corresponding author. Email: dunghv@hcmute.edu.vn  ARTICLE INFO ABSTRACT  Received:  27/09/2024 Sentiment analysis on feedback information plays a crucial role in  intelligent e-learning systems (IES). To enhance customer ser",
+              "ref_pages": [
+                1,
+                9
+              ]
+            },
+            "pages_total": 10
+          },
+          {
+            "title": "ReCatcher: Towards LLMs Regression Testing for Code Generation",
+            "venue": "arXiv.org",
+            "year": 2025,
+            "citationCount": 0,
+            "doi": "10.48550/arXiv.2507.19390",
+            "arxiv": "2507.19390",
+            "authors": [
+              "Altaf Allah Abbassi",
+              "L. D. Silva",
+              "Amin Nikanjam",
+              "F. Khomh"
+            ],
+            "is_high_impact": false,
+            "impact_tags": [],
+            "pdf_url": "https://arxiv.org/pdf/2507.19390",
+            "pdf_source": "arxiv",
+            "pdf_status": "ok",
+            "contexts": [
+              {
+                "page": 7,
+                "match": "[43]",
+                "snippet": "ReCatcher: Towards LLMs Regression Testing for Code Generation 7 assessing performance at the scalability level. AST-based approaches, such as those used in LeetCode [43], are common in educational settings, though they are less effective for real-world code assessment. Assessing the performance of LLM-generated code is challenging, as it requires determining whether a given solution is optimal in terms of execution"
+              }
+            ],
+            "reference_entry": {
+              "label": "[43]",
+              "label_num": 43,
+              "kind": "numbered",
+              "ref_text": "ng (Jack) Jiang. 2023. GitHub Copilot AI pair programmer: Asset or Liability? Journal of Systems and Software 203 (2023), 111734. doi:10.1016/j.jss.2023.111734 [42] Atharva Naik. 2024. On the limitations of embedding based methods for measuring functional correctness for code generation. arXiv preprint arXiv:2405.01580 (2024). [43] Anh-Tu Phuong Nguyen, Van-Dung Hoang, et al. 2024. Development of Code Evaluation System based on Abstract Syntax Tree. Journal of Technical Education Science 19, Special Issue 01 (2024), 15–24. [44] Jernej Novak, Andrej Krajnc, et al. 2010. Taxonomy of static code analysis tools. In The 33rd international convention MIPRO . IEEE, 418–422. [45] Peter W O’Hearn. 2019. Incorrectness logic. Proceedings of the ACM on",
+              "ref_pages": [
+                23
+              ]
+            },
+            "pages_total": 24
+          }
+        ]
+      },
+      "opencitations": {
+        "status": 200,
+        "count": 5,
+        "citing_dois": [
+          "10.1145/3699682.3728348",
+          "10.54644/jte.2025.1661",
+          "10.1145/3641554.3701905",
+          "10.1109/csitss64042.2024.10816767",
+          "10.1007/978-3-031-89813-6_6"
+        ]
+      },
+      "crossref_events": {
+        "status": 0,
+        "events": []
+      },
+      "google_scholar": {
+        "available": false,
+        "reason": "skipped (--no-scholar)"
+      },
+      "headline_citation_count": 13
+    }
+  ],
+  "github": {
+    "status": 200,
+    "available": true,
+    "login": "8syncdev",
+    "name": "Alex Nguyễn",
+    "bio": "Contact : 0703930513\r\nName: Nguyễn Phương Anh Tú\r\nMajor: Fullstack Developer\r\nTech Stack: Django (BE), Nextjs(FE), Flutter (Mobile), AI/ML: Pytorch, Game",
+    "location": "TP HCM",
+    "public_repos": 60,
+    "followers": 177,
+    "following": 2,
+    "hireable": true,
+    "created_at": "2022-10-06T14:18:02Z",
+    "html_url": "https://github.com/8syncdev",
+    "totals": {
+      "stars": 106,
+      "forks": 63,
+      "non_fork_repos": 51
+    },
+    "top_repos": [
+      {
+        "name": "py-cursor-helpers",
+        "full_name": "8syncdev/py-cursor-helpers",
+        "description": "Giải Pháp Reset Cursor Chuyên Nghiệp",
+        "stars": 52,
+        "forks": 29,
+        "watchers": 52,
+        "language": "Python",
+        "topics": [
+          "bypass",
+          "cursor",
+          "python",
+          "tools"
+        ],
+        "url": "https://github.com/8syncdev/py-cursor-helpers",
+        "updated_at": "2026-01-18T03:07:07Z",
+        "archived": false
+      },
+      {
+        "name": "ollama-docker-web-application",
+        "full_name": "8syncdev/ollama-docker-web-application",
+        "description": "Xây dựng AI Agent Website",
+        "stars": 31,
+        "forks": 15,
+        "watchers": 31,
+        "language": "Jupyter Notebook",
+        "topics": [
+          "8syncdev",
+          "docker",
+          "fastapi",
+          "genai",
+          "langchain",
+          "llm",
+          "nextjs-gen-ai",
+          "ollama",
+          "ollama-docker"
+        ],
+        "url": "https://github.com/8syncdev/ollama-docker-web-application",
+        "updated_at": "2026-04-28T02:10:24Z",
+        "archived": false
+      },
+      {
+        "name": "ai-agent-fletui",
+        "full_name": "8syncdev/ai-agent-fletui",
+        "description": "A modern chat interface application that connects to Ollama LLM models, built with Flet framework.",
+        "stars": 4,
+        "forks": 4,
+        "watchers": 4,
+        "language": "Python",
+        "topics": [
+          "agent",
+          "ai-agents",
+          "cross-platform",
+          "flet",
+          "fluter",
+          "langchain",
+          "llm",
+          "mobile",
+          "python"
+        ],
+        "url": "https://github.com/8syncdev/ai-agent-fletui",
+        "updated_at": "2026-01-08T19:08:24Z",
+        "archived": false
+      },
+      {
+        "name": "edu-mobile-app-flet",
+        "full_name": "8syncdev/edu-mobile-app-flet",
+        "description": "Building Edu Programing Courses Mobile App using Flet Framework",
+        "stars": 4,
+        "forks": 2,
+        "watchers": 4,
+        "language": "Python",
+        "topics": [
+          "flet",
+          "flet-app",
+          "mobile",
+          "python"
+        ],
+        "url": "https://github.com/8syncdev/edu-mobile-app-flet",
+        "updated_at": "2025-03-03T04:11:08Z",
+        "archived": false
+      },
+      {
+        "name": "build-chatgpt-v1-8syncdev",
+        "full_name": "8syncdev/build-chatgpt-v1-8syncdev",
+        "description": null,
+        "stars": 3,
+        "forks": 3,
+        "watchers": 3,
+        "language": "Python",
+        "topics": [],
+        "url": "https://github.com/8syncdev/build-chatgpt-v1-8syncdev",
+        "updated_at": "2025-07-17T02:18:53Z",
+        "archived": false
+      },
+      {
+        "name": "Word_Animation",
+        "full_name": "8syncdev/Word_Animation",
+        "description": null,
+        "stars": 2,
+        "forks": 1,
+        "watchers": 2,
+        "language": "JavaScript",
+        "topics": [],
+        "url": "https://github.com/8syncdev/Word_Animation",
+        "updated_at": "2022-12-11T10:12:31Z",
+        "archived": false
+      },
+      {
+        "name": "hack-web-tool-py-by-anhtudev",
+        "full_name": "8syncdev/hack-web-tool-py-by-anhtudev",
+        "description": null,
+        "stars": 1,
+        "forks": 1,
+        "watchers": 1,
+        "language": "Python",
+        "topics": [],
+        "url": "https://github.com/8syncdev/hack-web-tool-py-by-anhtudev",
+        "updated_at": "2026-02-18T17:28:08Z",
+        "archived": false
+      },
+      {
+        "name": "livestream-tutorial-course-hf",
+        "full_name": "8syncdev/livestream-tutorial-course-hf",
+        "description": null,
+        "stars": 1,
+        "forks": 1,
+        "watchers": 1,
+        "language": "Python",
+        "topics": [],
+        "url": "https://github.com/8syncdev/livestream-tutorial-course-hf",
+        "updated_at": "2025-11-04T01:59:42Z",
+        "archived": false
+      },
+      {
+        "name": "nxn-8-puzzle-a-star-flet-ui",
+        "full_name": "8syncdev/nxn-8-puzzle-a-star-flet-ui",
+        "description": "Dự án này là một trò chơi puzzle được phát triển bằng Python, tích hợp thuật toán tìm đường A* (A Star) và giao diện người dùng được xây dựng bằng công nghệ Flet UI. Trò chơi này không chỉ mang tính giải trí mà còn minh họa cách áp dụng thuật toán AI vào một ứng dụng thực tế.",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "language": "Python",
+        "topics": [
+          "8puzzle",
+          "8syncdev",
+          "astar",
+          "astar-algorithm",
+          "flet",
+          "flet-app",
+          "flet-dev",
+          "flutter",
+          "game",
+          "puzzle",
+          "puzzle-game",
+          "python"
+        ],
+        "url": "https://github.com/8syncdev/nxn-8-puzzle-a-star-flet-ui",
+        "updated_at": "2026-05-09T09:16:03Z",
+        "archived": false
+      },
+      {
+        "name": "christmas-tree-2025",
+        "full_name": "8syncdev/christmas-tree-2025",
+        "description": null,
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "language": "HTML",
+        "topics": [],
+        "url": "https://github.com/8syncdev/christmas-tree-2025",
+        "updated_at": "2025-12-28T13:44:48Z",
+        "archived": false
+      }
+    ],
+    "all_repos": [
+      {
+        "name": "py-cursor-helpers",
+        "full_name": "8syncdev/py-cursor-helpers",
+        "description": "Giải Pháp Reset Cursor Chuyên Nghiệp",
+        "stars": 52,
+        "forks": 29,
+        "watchers": 52,
+        "language": "Python",
+        "topics": [
+          "bypass",
+          "cursor",
+          "python",
+          "tools"
+        ],
+        "url": "https://github.com/8syncdev/py-cursor-helpers",
+        "updated_at": "2026-01-18T03:07:07Z",
+        "archived": false
+      },
+      {
+        "name": "ollama-docker-web-application",
+        "full_name": "8syncdev/ollama-docker-web-application",
+        "description": "Xây dựng AI Agent Website",
+        "stars": 31,
+        "forks": 15,
+        "watchers": 31,
+        "language": "Jupyter Notebook",
+        "topics": [
+          "8syncdev",
+          "docker",
+          "fastapi",
+          "genai",
+          "langchain",
+          "llm",
+          "nextjs-gen-ai",
+          "ollama",
+          "ollama-docker"
+        ],
+        "url": "https://github.com/8syncdev/ollama-docker-web-application",
+        "updated_at": "2026-04-28T02:10:24Z",
+        "archived": false
+      },
+      {
+        "name": "ai-agent-fletui",
+        "full_name": "8syncdev/ai-agent-fletui",
+        "description": "A modern chat interface application that connects to Ollama LLM models, built with Flet framework.",
+        "stars": 4,
+        "forks": 4,
+        "watchers": 4,
+        "language": "Python",
+        "topics": [
+          "agent",
+          "ai-agents",
+          "cross-platform",
+          "flet",
+          "fluter",
+          "langchain",
+          "llm",
+          "mobile",
+          "python"
+        ],
+        "url": "https://github.com/8syncdev/ai-agent-fletui",
+        "updated_at": "2026-01-08T19:08:24Z",
+        "archived": false
+      },
+      {
+        "name": "edu-mobile-app-flet",
+        "full_name": "8syncdev/edu-mobile-app-flet",
+        "description": "Building Edu Programing Courses Mobile App using Flet Framework",
+        "stars": 4,
+        "forks": 2,
+        "watchers": 4,
+        "language": "Python",
+        "topics": [
+          "flet",
+          "flet-app",
+          "mobile",
+          "python"
+        ],
+        "url": "https://github.com/8syncdev/edu-mobile-app-flet",
+        "updated_at": "2025-03-03T04:11:08Z",
+        "archived": false
+      },
+      {
+        "name": "build-chatgpt-v1-8syncdev",
+        "full_name": "8syncdev/build-chatgpt-v1-8syncdev",
+        "description": null,
+        "stars": 3,
+        "forks": 3,
+        "watchers": 3,
+        "language": "Python",
+        "topics": [],
+        "url": "https://github.com/8syncdev/build-chatgpt-v1-8syncdev",
+        "updated_at": "2025-07-17T02:18:53Z",
+        "archived": false
+      },
+      {
+        "name": "Word_Animation",
+        "full_name": "8syncdev/Word_Animation",
+        "description": null,
+        "stars": 2,
+        "forks": 1,
+        "watchers": 2,
+        "language": "JavaScript",
+        "topics": [],
+        "url": "https://github.com/8syncdev/Word_Animation",
+        "updated_at": "2022-12-11T10:12:31Z",
+        "archived": false
+      },
+      {
+        "name": "hack-web-tool-py-by-anhtudev",
+        "full_name": "8syncdev/hack-web-tool-py-by-anhtudev",
+        "description": null,
+        "stars": 1,
+        "forks": 1,
+        "watchers": 1,
+        "language": "Python",
+        "topics": [],
+        "url": "https://github.com/8syncdev/hack-web-tool-py-by-anhtudev",
+        "updated_at": "2026-02-18T17:28:08Z",
+        "archived": false
+      },
+      {
+        "name": "livestream-tutorial-course-hf",
+        "full_name": "8syncdev/livestream-tutorial-course-hf",
+        "description": null,
+        "stars": 1,
+        "forks": 1,
+        "watchers": 1,
+        "language": "Python",
+        "topics": [],
+        "url": "https://github.com/8syncdev/livestream-tutorial-course-hf",
+        "updated_at": "2025-11-04T01:59:42Z",
+        "archived": false
+      },
+      {
+        "name": "nxn-8-puzzle-a-star-flet-ui",
+        "full_name": "8syncdev/nxn-8-puzzle-a-star-flet-ui",
+        "description": "Dự án này là một trò chơi puzzle được phát triển bằng Python, tích hợp thuật toán tìm đường A* (A Star) và giao diện người dùng được xây dựng bằng công nghệ Flet UI. Trò chơi này không chỉ mang tính giải trí mà còn minh họa cách áp dụng thuật toán AI vào một ứng dụng thực tế.",
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "language": "Python",
+        "topics": [
+          "8puzzle",
+          "8syncdev",
+          "astar",
+          "astar-algorithm",
+          "flet",
+          "flet-app",
+          "flet-dev",
+          "flutter",
+          "game",
+          "puzzle",
+          "puzzle-game",
+          "python"
+        ],
+        "url": "https://github.com/8syncdev/nxn-8-puzzle-a-star-flet-ui",
+        "updated_at": "2026-05-09T09:16:03Z",
+        "archived": false
+      },
+      {
+        "name": "christmas-tree-2025",
+        "full_name": "8syncdev/christmas-tree-2025",
+        "description": null,
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "language": "HTML",
+        "topics": [],
+        "url": "https://github.com/8syncdev/christmas-tree-2025",
+        "updated_at": "2025-12-28T13:44:48Z",
+        "archived": false
+      },
+      {
+        "name": "8syncdev",
+        "full_name": "8syncdev/8syncdev",
+        "description": null,
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "language": null,
+        "topics": [],
+        "url": "https://github.com/8syncdev/8syncdev",
+        "updated_at": "2025-07-22T20:12:31Z",
+        "archived": false
+      },
+      {
+        "name": "edu-eccommerce-website",
+        "full_name": "8syncdev/edu-eccommerce-website",
+        "description": null,
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "language": "CSS",
+        "topics": [],
+        "url": "https://github.com/8syncdev/edu-eccommerce-website",
+        "updated_at": "2025-05-17T08:42:41Z",
+        "archived": false
+      },
+      {
+        "name": "Mashine-Learning---RoBerta---Base-Bert",
+        "full_name": "8syncdev/Mashine-Learning---RoBerta---Base-Bert",
+        "description": null,
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "language": "Jupyter Notebook",
+        "topics": [],
+        "url": "https://github.com/8syncdev/Mashine-Learning---RoBerta---Base-Bert",
+        "updated_at": "2024-10-22T10:26:51Z",
+        "archived": false
+      },
+      {
+        "name": "Project_Web_Course_Online",
+        "full_name": "8syncdev/Project_Web_Course_Online",
+        "description": null,
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "language": "HTML",
+        "topics": [],
+        "url": "https://github.com/8syncdev/Project_Web_Course_Online",
+        "updated_at": "2024-01-22T13:03:27Z",
+        "archived": false
+      },
+      {
+        "name": "Python-19__2023",
+        "full_name": "8syncdev/Python-19__2023",
+        "description": null,
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "language": "Python",
+        "topics": [],
+        "url": "https://github.com/8syncdev/Python-19__2023",
+        "updated_at": "2023-10-17T13:27:15Z",
+        "archived": false
+      },
+      {
+        "name": "Practise",
+        "full_name": "8syncdev/Practise",
+        "description": null,
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "language": "CSS",
+        "topics": [],
+        "url": "https://github.com/8syncdev/Practise",
+        "updated_at": "2023-04-25T14:32:38Z",
+        "archived": false
+      },
+      {
+        "name": "tele_ultimate_bot_v001",
+        "full_name": "8syncdev/tele_ultimate_bot_v001",
+        "description": null,
+        "stars": 0,
+        "forks": 3,
+        "watchers": 0,
+        "language": "Python",
+        "topics": [],
+        "url": "https://github.com/8syncdev/tele_ultimate_bot_v001",
+        "updated_at": "2025-04-15T13:18:46Z",
+        "archived": false
+      },
+      {
+        "name": "pose",
+        "full_name": "8syncdev/pose",
+        "description": "Dự Án E-learning Platform",
+        "stars": 0,
+        "forks": 2,
+        "watchers": 0,
+        "language": "TypeScript",
+        "topics": [],
+        "url": "https://github.com/8syncdev/pose",
+        "updated_at": "2024-12-15T08:53:35Z",
+        "archived": false
+      },
+      {
+        "name": "portfolio-wyn-v1",
+        "full_name": "8syncdev/portfolio-wyn-v1",
+        "description": null,
+        "stars": 0,
+        "forks": 1,
+        "watchers": 0,
+        "language": "TypeScript",
+        "topics": [],
+        "url": "https://github.com/8syncdev/portfolio-wyn-v1",
+        "updated_at": "2025-04-06T07:34:39Z",
+        "archived": false
+      },
+      {
+        "name": "new-ui-admin-graph-2024",
+        "full_name": "8syncdev/new-ui-admin-graph-2024",
+        "description": null,
+        "stars": 0,
+        "forks": 1,
+        "watchers": 0,
+        "language": "Python",
+        "topics": [],
+        "url": "https://github.com/8syncdev/new-ui-admin-graph-2024",
+        "updated_at": "2024-04-11T15:21:56Z",
+        "archived": false
+      },
+      {
+        "name": "8sync-verse",
+        "full_name": "8syncdev/8sync-verse",
+        "description": "8 Sync Verse - Multi-platform learning and AI agent ecosystem (Turborepo + Bun + Next.js + Encore.ts)",
+        "stars": 0,
+        "forks": 0,
+        "watchers": 0,
+        "language": "TypeScript",
+        "topics": [],
+        "url": "https://github.com/8syncdev/8sync-verse",
+        "updated_at": "2026-04-29T08:00:32Z",
+        "archived": false
+      },
+      {
+        "name": "minecraft-py-8syncdev-v1",
+        "full_name": "8syncdev/minecraft-py-8syncdev-v1",
+        "description": "Lập trình game sử dụng Python và thư viện Ursina để tạo một môi trường thế giới mở với địa hình ngẫu nhiên và tương tác đối tượng.",
+        "stars": 0,
+        "forks": 0,
+        "watchers": 0,
+        "language": "Python",
+        "topics": [
+          "3d-game",
+          "3d-models",
+          "game",
+          "map",
+          "minecraft",
+          "noise-maps",
+          "python-game",
+          "ursina",
+          "ursina-engine"
+        ],
+        "url": "https://github.com/8syncdev/minecraft-py-8syncdev-v1",
+        "updated_at": "2026-01-07T01:17:23Z",
+        "archived": false
+      },
+      {
+        "name": "doc_web_view",
+        "full_name": "8syncdev/doc_web_view",
+        "description": null,
+        "stars": 0,
+        "forks": 0,
+        "watchers": 0,
+        "language": "TypeScript",
+        "topics": [],
+        "url": "https://github.com/8syncdev/doc_web_view",
+        "updated_at": "2025-09-30T22:09:42Z",
+        "archived": false
+      },
+      {
+        "name": "deploy-fastapi-vercel-guide",
+        "full_name": "8syncdev/deploy-fastapi-vercel-guide",
+        "description": null,
+        "stars": 0,
+        "forks": 0,
+        "watchers": 0,
+        "language": "Python",
+        "topics": [],
+        "url": "https://github.com/8syncdev/deploy-fastapi-vercel-guide",
+        "updated_at": "2025-01-08T02:16:43Z",
+        "archived": false
+      },
+      {
+        "name": "python-1v1-fullstack-v2",
+        "full_name": "8syncdev/python-1v1-fullstack-v2",
+        "description": null,
+        "stars": 0,
+        "forks": 0,
+        "watchers": 0,
+        "language": "Python",
+        "topics": [],
+        "url": "https://github.com/8syncdev/python-1v1-fullstack-v2",
+        "updated_at": "2024-11-22T06:58:51Z",
+        "archived": false
+      },
+      {
+        "name": "fhdev-next",
+        "full_name": "8syncdev/fhdev-next",
+        "description": null,
+        "stars": 0,
+        "forks": 0,
+        "watchers": 0,
+        "language": "TypeScript",
+        "topics": [],
+        "url": "https://github.com/8syncdev/fhdev-next",
+        "updated_at": "2024-10-20T04:37:43Z",
+        "archived": false
+      },
+      {
+        "name": "8syncdev-djninex-big-project",
+        "full_name": "8syncdev/8syncdev-djninex-big-project",
+        "description": null,
+        "stars": 0,
+        "forks": 0,
+        "watchers": 0,
+        "language": "Python",
+        "topics": [],
+        "url": "https://github.com/8syncdev/8syncdev-djninex-big-project",
+        "updated_at": "2024-10-14T02:24:12Z",
+        "archived": false
+      },
+      {
+        "name": "editor-ursina-app",
+        "full_name": "8syncdev/editor-ursina-app",
+        "description": null,
+        "stars": 0,
+        "forks": 0,
+        "watchers": 0,
+        "language": "Python",
+        "topics": [],
+        "url": "https://github.com/8syncdev/editor-ursina-app",
+        "updated_at": "2024-08-31T01:34:45Z",
+        "archived": false
+      },
+      {
+        "name": "ctk-management-thesis",
+        "full_name": "8syncdev/ctk-management-thesis",
+        "description": null,
+        "stars": 0,
+        "forks": 0,
+        "watchers": 0,
+        "language": "Python",
+        "topics": [],
+        "url": "https://github.com/8syncdev/ctk-management-thesis",
+        "updated_at": "2024-05-12T10:33:21Z",
+        "archived": false
+      },
+      {
+        "name": "rn-expo-upload-firbase",
+        "full_name": "8syncdev/rn-expo-upload-firbase",
+        "description": null,
+        "stars": 0,
+        "forks": 0,
+        "watchers": 0,
+        "language": "JavaScript",
+        "topics": [],
+        "url": "https://github.com/8syncdev/rn-expo-upload-firbase",
+        "updated_at": "2024-04-14T15:08:25Z",
+        "archived": false
+      },
+      {
+        "name": "Singleton-Prototype-CTK-040124",
+        "full_name": "8syncdev/Singleton-Prototype-CTK-040124",
+        "description": null,
+        "stars": 0,
+        "forks": 0,
+        "watchers": 0,
+        "language": "Python",
+        "topics": [],
+        "url": "https://github.com/8syncdev/Singleton-Prototype-CTK-040124",
+        "updated_at": "2024-04-01T04:42:52Z",
+        "archived": false
+      },
+      {
+        "name": "TTK-Practise-App",
+        "full_name": "8syncdev/TTK-Practise-App",
+        "description": null,
+        "stars": 0,
+        "forks": 0,
+        "watchers": 0,
+        "language": "Python",
+        "topics": [],
+        "url": "https://github.com/8syncdev/TTK-Practise-App",
+        "updated_at": "2024-02-20T23:42:25Z",
+        "archived": false
+      },
+      {
+        "name": "AudioVisual",
+        "full_name": "8syncdev/AudioVisual",
+        "description": null,
+        "stars": 0,
+        "forks": 0,
+        "watchers": 0,
+        "language": "HTML",
+        "topics": [],
+        "url": "https://github.com/8syncdev/AudioVisual",
+        "updated_at": "2024-02-09T03:31:10Z",
+        "archived": false
+      },
+      {
+        "name": "back-end-servlet",
+        "full_name": "8syncdev/back-end-servlet",
+        "description": null,
+        "stars": 0,
+        "forks": 0,
+        "watchers": 0,
+        "language": "JavaScript",
+        "topics": [],
+        "url": "https://github.com/8syncdev/back-end-servlet",
+        "updated_at": "2024-02-07T15:15:51Z",
+        "archived": false
+      },
+      {
+        "name": "learning-git",
+        "full_name": "8syncdev/learning-git",
+        "description": null,
+        "stars": 0,
+        "forks": 0,
+        "watchers": 0,
+        "language": "Python",
+        "topics": [],
+        "url": "https://github.com/8syncdev/learning-git",
+        "updated_at": "2024-01-24T14:36:47Z",
+        "archived": false
+      },
+      {
+        "name": "SVG-LOGO-DESIGN",
+        "full_name": "8syncdev/SVG-LOGO-DESIGN",
+        "description": null,
+        "stars": 0,
+        "forks": 0,
+        "watchers": 0,
+        "language": null,
+        "topics": [],
+        "url": "https://github.com/8syncdev/SVG-LOGO-DESIGN",
+        "updated_at": "2023-12-29T00:47:12Z",
+        "archived": false
+      },
+      {
+        "name": "Coaching-Fe",
+        "full_name": "8syncdev/Coaching-Fe",
+        "description": null,
+        "stars": 0,
+        "forks": 0,
+        "watchers": 0,
+        "language": "JavaScript",
+        "topics": [],
+        "url": "https://github.com/8syncdev/Coaching-Fe",
+        "updated_at": "2023-11-22T13:57:40Z",
+        "archived": false
+      },
+      {
+        "name": "Java-Servlet-JSP-JSTL-TailwindCss-2023",
+        "full_name": "8syncdev/Java-Servlet-JSP-JSTL-TailwindCss-2023",
+        "description": "Java-Servlet-JSP-JSTL-TailwindCss-2023",
+        "stars": 0,
+        "forks": 0,
+        "watchers": 0,
+        "language": "Java",
+        "topics": [],
+        "url": "https://github.com/8syncdev/Java-Servlet-JSP-JSTL-TailwindCss-2023",
+        "updated_at": "2023-10-08T23:42:27Z",
+        "archived": false
+      },
+      {
+        "name": "Project-Css-Foundation",
+        "full_name": "8syncdev/Project-Css-Foundation",
+        "description": null,
+        "stars": 0,
+        "forks": 0,
+        "watchers": 0,
+        "language": "HTML",
+        "topics": [],
+        "url": "https://github.com/8syncdev/Project-Css-Foundation",
+        "updated_at": "2023-10-03T13:53:08Z",
+        "archived": false
+      },
+      {
+        "name": "Project-FE-1",
+        "full_name": "8syncdev/Project-FE-1",
+        "description": null,
+        "stars": 0,
+        "forks": 0,
+        "watchers": 0,
+        "language": "HTML",
+        "topics": [],
+        "url": "https://github.com/8syncdev/Project-FE-1",
+        "updated_at": "2023-09-28T14:06:28Z",
+        "archived": false
+      },
+      {
+        "name": "Project-1-FE",
+        "full_name": "8syncdev/Project-1-FE",
+        "description": null,
+        "stars": 0,
+        "forks": 0,
+        "watchers": 0,
+        "language": "HTML",
+        "topics": [],
+        "url": "https://github.com/8syncdev/Project-1-FE",
+        "updated_at": "2023-09-21T14:00:15Z",
+        "archived": false
+      },
+      {
+        "name": "Java-Web-Servlet-Form",
+        "full_name": "8syncdev/Java-Web-Servlet-Form",
+        "description": null,
+        "stars": 0,
+        "forks": 0,
+        "watchers": 0,
+        "language": "Java",
+        "topics": [],
+        "url": "https://github.com/8syncdev/Java-Web-Servlet-Form",
+        "updated_at": "2023-09-17T15:33:23Z",
+        "archived": false
+      },
+      {
+        "name": "Web-Learning-Program",
+        "full_name": "8syncdev/Web-Learning-Program",
+        "description": null,
+        "stars": 0,
+        "forks": 0,
+        "watchers": 0,
+        "language": "JavaScript",
+        "topics": [],
+        "url": "https://github.com/8syncdev/Web-Learning-Program",
+        "updated_at": "2023-09-13T13:12:58Z",
+        "archived": false
+      },
+      {
+        "name": "Python-19-OOP_APP_BANKING",
+        "full_name": "8syncdev/Python-19-OOP_APP_BANKING",
+        "description": "Python-19-OOP_APP_BANKING",
+        "stars": 0,
+        "forks": 0,
+        "watchers": 0,
+        "language": "Python",
+        "topics": [],
+        "url": "https://github.com/8syncdev/Python-19-OOP_APP_BANKING",
+        "updated_at": "2023-09-10T03:45:17Z",
+        "archived": false
+      },
+      {
+        "name": "Render-Deploy",
+        "full_name": "8syncdev/Render-Deploy",
+        "description": null,
+        "stars": 0,
+        "forks": 0,
+        "watchers": 0,
+        "language": "Python",
+        "topics": [],
+        "url": "https://github.com/8syncdev/Render-Deploy",
+        "updated_at": "2023-09-03T13:08:26Z",
+        "archived": false
+      },
+      {
+        "name": "REST-API",
+        "full_name": "8syncdev/REST-API",
+        "description": null,
+        "stars": 0,
+        "forks": 0,
+        "watchers": 0,
+        "language": "Python",
+        "topics": [],
+        "url": "https://github.com/8syncdev/REST-API",
+        "updated_at": "2023-08-22T14:55:36Z",
+        "archived": false
+      },
+      {
+        "name": "Super-Animation-RectJS",
+        "full_name": "8syncdev/Super-Animation-RectJS",
+        "description": "Super-Animation-RectJS",
+        "stars": 0,
+        "forks": 0,
+        "watchers": 0,
+        "language": "JavaScript",
+        "topics": [],
+        "url": "https://github.com/8syncdev/Super-Animation-RectJS",
+        "updated_at": "2023-08-22T04:24:00Z",
+        "archived": false
+      },
+      {
+        "name": "Practise-UI-UX-Web-Course-Online",
+        "full_name": "8syncdev/Practise-UI-UX-Web-Course-Online",
+        "description": "Practise UI/UX Web Course Online",
+        "stars": 0,
+        "forks": 0,
+        "watchers": 0,
+        "language": "HTML",
+        "topics": [],
+        "url": "https://github.com/8syncdev/Practise-UI-UX-Web-Course-Online",
+        "updated_at": "2023-05-26T01:42:42Z",
+        "archived": false
+      },
+      {
+        "name": "KiLopFD",
+        "full_name": "8syncdev/KiLopFD",
+        "description": null,
+        "stars": 0,
+        "forks": 0,
+        "watchers": 0,
+        "language": null,
+        "topics": [],
+        "url": "https://github.com/8syncdev/KiLopFD",
+        "updated_at": "2023-04-12T12:51:53Z",
+        "archived": false
+      },
+      {
+        "name": "web-courses-online-ki-lop",
+        "full_name": "8syncdev/web-courses-online-ki-lop",
+        "description": "Modern Website UI/UX Courses Online",
+        "stars": 0,
+        "forks": 0,
+        "watchers": 0,
+        "language": "HTML",
+        "topics": [],
+        "url": "https://github.com/8syncdev/web-courses-online-ki-lop",
+        "updated_at": "2023-04-10T16:42:20Z",
+        "archived": false
+      },
+      {
+        "name": "modern-web-1",
+        "full_name": "8syncdev/modern-web-1",
+        "description": null,
+        "stars": 0,
+        "forks": 0,
+        "watchers": 0,
+        "language": "CSS",
+        "topics": [],
+        "url": "https://github.com/8syncdev/modern-web-1",
+        "updated_at": "2023-03-24T12:15:23Z",
+        "archived": false
+      }
+    ],
+    "languages": [
+      [
+        "Python",
+        22
+      ],
+      [
+        "HTML",
+        8
+      ],
+      [
+        "JavaScript",
+        6
+      ],
+      [
+        "TypeScript",
+        5
+      ],
+      [
+        "CSS",
+        3
+      ],
+      [
+        "Jupyter Notebook",
+        2
+      ],
+      [
+        "Java",
+        2
+      ]
+    ]
+  }
+}

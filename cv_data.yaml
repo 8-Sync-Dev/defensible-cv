@@ -1,0 +1,197 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.8/schema.json
+#
+# CV — Nguyễn Phương Anh Tú
+# All time-varying figures (citations, downloads, stars/forks) are mirrored in
+# data/research.json and data/research.md. Refresh them with:
+#     python scripts/research.py --no-scholar
+# before re-rendering whenever you want the numbers in this file to be
+# defensible against a live recruiter check.
+cv:
+  name: Nguyễn Phương Anh Tú
+  headline: AI Engineer · CRM AI · LLM Systems · Open-Source Author
+  location: Ho Chi Minh City, Vietnam
+  email: atus@8syncdev.com
+  phone: "+84-703-930-513"
+  website: https://8syncdev.com/
+  social_networks:
+    - network: GitHub
+      username: 8syncdev
+    - network: YouTube
+      username: Dev8Sync
+    - network: ORCID
+      username: 0009-0005-9352-9353
+
+  sections:
+    summary:
+      - AI Engineer at **CloudGO** shipping production AI across a CRM
+        platform that serves **2,500+ Vietnamese enterprises** — lead
+        scoring, customer segmentation, sentiment analysis on email & call
+        transcripts, churn prediction, and 24/7 LLM chatbots.
+      - Founder of **8 Sync Dev** — published researcher with 2 JTE papers,
+        **1,362 combined downloads**, **13 citations**, cited at ACM UMAP
+        2025 [ref 19] and arXiv ReCatcher 2025 [ref 43] for AST-based code
+        evaluation. Author of `py-cursor-helpers` (**52★ / 29F**) in the
+        global Cursor IDE community; **106★ across 51 original repos** under
+        [`@8syncdev`](https://github.com/8syncdev).
+    experience:
+      - company: CloudGO (CloudPro CRM)
+        position: AI Engineer
+        start_date: 2025-08
+        end_date: present
+        location: Ho Chi Minh City, Vietnam
+        highlights:
+          - Own AI feature delivery across the CloudPro CRM product surface used by
+            **2,500+ businesses** — lead scoring, customer segmentation, sentiment
+            analysis on email & call transcripts, churn prediction, revenue
+            forecasting.
+          - Designed and integrated an **LLM-powered 24/7 AI chatbot** into the
+            customer-service module, cutting first-response time and offloading FAQ
+            volume from agents.
+          - Built **retrieval-augmented (RAG) pipelines** wiring CRM data
+            (PostgreSQL) into LLMs for personalized recommendations and
+            next-best-action suggestions.
+          - Productionized AI components across integrations with **Zalo, Facebook,
+            call-center (tổng đài), WMS, POS, ERP, HRM, TMS, DMS, Email Automation,
+            and Ecom** channels.
+          - Contributed to the **AI Camera pipeline** — masked-face recognition at
+            **99% accuracy in <1 s** for the on-prem CloudPro CRM + AI Camera
+            offering.
+      - company: 8 Sync Dev
+        position: Founder & Lead Developer
+        start_date: 2024-01
+        end_date: present
+        location: Ho Chi Minh City, Vietnam
+        highlights:
+          - Run an AI-powered tech-education platform concurrently with CloudGO.
+            Operate **[8syncdev.com](https://8syncdev.com/)** and the
+            **[Dev8Sync](https://www.youtube.com/@Dev8Sync)** channel (Next.js +
+            Django + PyTorch).
+          - Maintain **60 public repositories** with **177 followers** and
+            **106 aggregate stars / 63 forks** across 51 non-fork projects on
+            GitHub [`@8syncdev`](https://github.com/8syncdev).
+          - Shipped **`py-cursor-helpers`** (Cursor IDE workspace reset &
+            security toolkit) — **52★ / 29F**, featured across Cursor
+            communities globally — and **`ollama-docker-web-application`**
+            (local LLM agent platform on Docker) — **31★ / 15F**.
+          - Architected **ELP-CMP**, an enterprise e-learning platform with
+            microservices in Next.js 15, FastAPI, PostgreSQL, MongoDB, and Redis;
+            real-time sentiment analytics and AST-based code grading bundled in.
+      - company: Fullhousedev
+        position: Senior Programming Instructor & Platform Developer
+        start_date: 2021-09
+        end_date: 2025-06
+        location: Ho Chi Minh City, Vietnam
+        highlights:
+          - Trained **1,000+ students** across Python, Web, AI/ML, and Software
+            Engineering tracks; ran small-cohort, project-driven curricula.
+          - Built and maintained
+            **[fullhousedev.vn](https://fullhousedev.vn/)** on Next.js + TypeScript,
+            including the learning portal and instructor dashboards.
+      - company: Minh Khang Mechatronics (MKC)
+        position: Software Developer
+        start_date: 2023-01
+        end_date: 2024-01
+        location: Vietnam
+        highlights:
+          - Built industrial-automation software (HMI + real-time control loops)
+            with **99.9% uptime** across production shifts.
+          - Integrated PLC / sensor telemetry into operator-facing tooling for
+            mechatronics product lines.
+    publications:
+      - title: 'Sentiment Prediction Based on Deep Learning for Intelligent E-Learning Systems'
+        authors:
+          - '**Nguyen, Anh-Tu Phuong**'
+          - Duong, Duc-Khai
+          - Hoang, Van-Dung
+        doi: 10.54644/jte.2025.1661
+        journal: Journal of Technical Education Science (JTE)
+        date: 2025
+        summary: >-
+          RoBERTa-based sentiment model for adaptive feedback in e-learning
+          systems. **268** OJS downloads. Lead author; advisor: Assoc. Prof.
+          Van-Dung Hoang.
+      - title: 'Development of Code Evaluation System based on Abstract Syntax Tree'
+        authors:
+          - '**Nguyen, Anh-Tu Phuong**'
+          - Hoang, Van-Dung
+        doi: 10.54644/jte.2024.1514
+        journal: Journal of Technical Education Science (JTE)
+        date: 2024
+        summary: >-
+          AST-based static + semantic grader for programming-education
+          workflows. **1,094** OJS downloads, **13** Semantic Scholar
+          citations (5 OpenCitations). Adopted in production: **ACM UMAP
+          2025** [ref 19, p.2] cites it for "ASTs widely used in automated
+          code analysis"; **arXiv ReCatcher 2025** [ref 43, p.7] cites it as
+          a canonical AST grader in educational settings. Full per-citation
+          excerpts in `data/research.md`.
+    projects:
+      - name: '[ELP-CMP E-Learning Platform](https://8syncdev.com/)'
+        date: '2024 – present'
+        summary: >-
+          Microservices e-learning platform — Next.js 15 + FastAPI + PostgreSQL
+          + MongoDB + Redis, with AST-based code grading and real-time sentiment
+          analytics for student-facing feedback.
+        highlights:
+          - Designed the AST-grading service that backs the JTE 2024 paper
+            (1,094 downloads · 13 citations).
+          - Built RAG-powered tutor module on top of OpenAI / Qwen / Ollama with
+            pgvector retrieval over course materials.
+      - name: '[py-cursor-helpers](https://github.com/8syncdev/py-cursor-helpers)'
+        date: '2024 – present'
+        summary: >-
+          Cursor IDE workspace reset and security toolkit, published on
+          PyPI/GitHub. **52★ / 29F**, adopted across the global Cursor community.
+        highlights:
+          - Single-binary CLI (Python) with cross-platform install path detection.
+          - Top-stars repository under `@8syncdev`; trending in Cursor IDE
+            user channels.
+      - name: '[ollama-docker-web-application](https://github.com/8syncdev/ollama-docker-web-application)'
+        date: '2024 – present'
+        summary: >-
+          Local LLM agent platform — Ollama + Docker + web UI, ready-to-run for
+          self-hosted models. **31★ / 15F**.
+        highlights:
+          - One-command `docker compose` stack bundling Ollama runtime, vector
+            store, and a web chat interface.
+          - Reference implementation for the 8 Sync Dev RAG curriculum.
+    education:
+      - institution: Ho Chi Minh City University of Technology and Education (HCMUTE)
+        area: Information Technology
+        degree: BS
+        start_date: 2021-09
+        end_date: 2025-06
+        location: Ho Chi Minh City, Vietnam
+        summary: >-
+          Graduated with **Distinction**, GPA **3.3 / 4.0**. Undergraduate
+          research produced two peer-reviewed publications in the
+          [*Journal of Technical Education Science*](https://jte.edu.vn/) (see
+          Publications); advisor: Assoc. Prof. Van-Dung Hoang.
+        highlights:
+          - 'Thesis: AST-based Code Evaluation System and RoBERTa Sentiment Pipeline for E-Learning (ORCID 0009-0005-9352-9353)'
+    skills:
+      - label: Languages
+        details: Python (Expert), TypeScript / JavaScript (Expert), SQL, C++, HTML / CSS
+      - label: AI / ML
+        details: LLM integration (OpenAI, Qwen, Ollama), LangChain / LangGraph, RAG, vector DBs (pgvector, Qdrant), fine-tuning, RoBERTa / BERT, NLP, PyTorch, TensorFlow, AST analysis
+      - label: Backend
+        details: FastAPI, Django, Flask, Node.js, Encore.ts, microservices, gRPC, REST, WebSockets
+      - label: Frontend
+        details: Next.js 15 / 16, React 19, TypeScript, Tailwind, shadcn/ui
+      - label: Data & Infra
+        details: PostgreSQL, MongoDB, Redis, Docker, AWS, CI/CD, Git, Linux
+      - label: Domains
+        details: CRM AI, sentiment analysis, lead scoring, churn prediction, code analysis, e-learning
+design:
+  theme: engineeringresumes
+  typography:
+    line_spacing: 0.55em
+  sections:
+    space_between_regular_entries: 0.32cm
+    space_between_text_based_entries: 0.10cm
+  entries:
+    summary:
+      space_above: 0.05cm
+    highlights:
+      space_above: 0.05cm
+      space_between_items: 0.05cm

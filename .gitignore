@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+*.pyc
+
+# 24h research crawler cache — output (research.json/md) is committed, cache is not
+data/.cache/
+
+# rendercv render artefacts — regenerate with `rendercv render cv_data.yaml`
+rendercv_output/
