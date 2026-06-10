@@ -1,17 +1,21 @@
 # CV — Nguyễn Phương Anh Tú
 
-Source of truth for my CV. Three things live in this repo:
+Source of truth for my CV — and a reusable, profile-driven pipeline that builds
+a defensible developer CV for **anyone**. Four things live in this repo:
 
-1. **`cv_data.yaml`** — [rendercv](https://docs.rendercv.com) input file. Edit this; render to PDF.
-2. **`scripts/research.py`** — refreshes verifiable metrics that the CV cites
+1. **`profile.yaml`** — the single input file: identity + research sources +
+   experience/education/skills. The crawler reads its `research_sources`; the CV
+   is authored from the rest. Copy **`profile.example.yaml`** to start a new one.
+2. **`cv_data.yaml`** — [rendercv](https://docs.rendercv.com) source, written from
+   `profile.yaml` + verified numbers. Render this to PDF.
+3. **`scripts/research.py`** — refreshes verifiable metrics the CV cites
    (publication downloads, citation counts and citing-paper list, GitHub
    stars/forks). Output is committed at `data/research.{json,md}` so the CV
-   numbers are always defensible against a live recruiter check.
-3. **`agents/skills/defensible-cv/SKILL.md`** — the agent playbook. Any AI
-   coding agent that reads `SKILL.md` files auto-discovers it; its
-   `description` fires whenever you ask the agent to edit the CV, refresh the
-   metrics, or re-render the PDF, so it follows the same rules that keep every
-   number defensible.
+   numbers stay defensible against a live recruiter check.
+4. **`agents/skills/defensible-cv/SKILL.md`** — the agent playbook. Any AI coding
+   agent that reads `SKILL.md` files auto-discovers it; its `description` fires
+   when you ask the agent to build/edit the CV, refresh metrics, or render — and
+   it **stops to ask for `profile.yaml`** if one isn't present.
 
 ## Quickstart
 
@@ -32,6 +36,23 @@ uv run --with "rendercv[full]>=2.8" rendercv render cv_data.yaml
 # …or, inside the venv created above:
 .venv/bin/rendercv render cv_data.yaml
 ```
+
+## Generate a CV for someone else
+
+The whole repo is profile-driven, so reusing it for another person is three steps:
+
+```bash
+cp profile.example.yaml profile.yaml   # then fill it in (identity + research_sources + narrative)
+uv run --with requests --with pyyaml --with pypdf \
+  python scripts/research.py --no-scholar   # verifies their GitHub + publications
+# then ask an agent (see SKILL.md) to author cv_data.yaml and render the PDF
+```
+
+`scripts/research.py` reads **only** `profile.yaml`'s `research_sources`
+(GitHub username + publication DOIs/OJS URLs + per-paper match signatures). If
+`profile.yaml` is missing it stops with a clear message instead of inventing
+data — copy the template and fill it first. The committed `profile.yaml` /
+`cv_data.yaml` are a complete worked example.
 
 ## Agent skill
 
@@ -90,7 +111,9 @@ Paywalled citing papers (most IEEE, parts of ACM, MDPI behind Akamai) are kept i
 ## Files
 
 ```
-cv_data.yaml                 rendercv source (English)
+profile.yaml                 INPUT: identity + research sources + narrative
+profile.example.yaml         documented template — copy to profile.yaml
+cv_data.yaml                 rendercv source (authored from profile + research)
 scripts/research.py          CLI crawler, single file, urllib-only
 data/research.json           machine-readable snapshot (regenerated)
 data/research.md             recruiter-friendly summary (regenerated)

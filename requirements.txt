@@ -2,10 +2,9 @@
 rendercv[full]>=2.8
 
 # Research crawler dependencies (scripts/research.py).
-# Note: research.py is intentionally implemented on top of urllib so the only
-# hard runtime dependency is the standard library + rendercv. PyYAML is kept
-# here because rendercv requires it transitively and several downstream tools
-# expect it explicitly.
+# Network I/O uses only the standard library (urllib) — no `requests` needed.
+# PyYAML IS required: the crawler parses profile.yaml (its research_sources) and
+# rendercv depends on it transitively too.
 PyYAML>=6.0
 
 

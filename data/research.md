@@ -1,5 +1,5 @@
 # Research metrics — Nguyễn Phương Anh Tú
-_Last refreshed: 2026-06-09T07:09:03+00:00_
+_Last refreshed: 2026-06-10T02:01:12+00:00_
 
 ## Publications
 
@@ -8,7 +8,7 @@ _Last refreshed: 2026-06-09T07:09:03+00:00_
 - Journal: Journal of Technical Education Science (JTE) (2025)
 - Authors: Nguyen, A.-T. P.; Duong, D.-K.; Hoang, V.-D.
 - OJS downloads: **268** (raw `268`)
-- Citations: n/a (Semantic Scholar) · **0** (OpenCitations) · n/a (Google Scholar — skipped (--no-scholar))
+- Citations: **0** (Semantic Scholar) · **0** (OpenCitations) · n/a (Google Scholar — skipped (--no-scholar))
 - Citing papers with extracted in-text excerpts: **0 of 0** (others paywalled or not in Unpaywall).
 
 ### Development of Code Evaluation System based on Abstract Syntax Tree

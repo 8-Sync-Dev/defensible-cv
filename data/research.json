@@ -1,5 +1,6 @@
 {
-  "generated_at": "2026-06-09T07:09:03+00:00",
+  "generated_at": "2026-06-10T02:01:12+00:00",
+  "name": "Nguyễn Phương Anh Tú",
   "publications": [
     {
       "key": "jte-2025-1661",
@@ -10,6 +11,11 @@
       "year": 2025,
       "lead_author": true,
       "authors_display": "Nguyen, A.-T. P.; Duong, D.-K.; Hoang, V.-D.",
+      "signatures": [
+        "10.54644/jte.2025.1661",
+        "Sentiment Prediction Based on Deep Learning for Intelligent E-Learning",
+        "jte.2025.1661"
+      ],
       "ojs": {
         "url": "https://jte.edu.vn/index.php/jte/article/view/1661",
         "status": 200,
@@ -17,9 +23,19 @@
         "downloads_raw": "268"
       },
       "semantic_scholar": {
-        "status": 429,
-        "available": false,
-        "raw": "{\"message\": \"Too Many Requests. Please wait and try again or apply for a key for higher rate limits. https://www.semanticscholar.org/product/api#api-key-form\", \"code\": \"429\"}",
+        "status": 200,
+        "available": true,
+        "paper_id": "c71145c10938364f23d6a65d2af54c9a9dca26df",
+        "title": "Sentiment Prediction Based on Deep Learning for Intelligent E-Learning Systems",
+        "year": 2025,
+        "venue": "Journal of Technical Education Science",
+        "citation_count": 0,
+        "influential_citation_count": 0,
+        "authors": [
+          "Anh-Tu Phuong Nguyen",
+          "Duc-Khai Duong",
+          "Van-Dung Hoang"
+        ],
         "citing_papers": []
       },
       "opencitations": {
@@ -46,6 +62,12 @@
       "year": 2024,
       "lead_author": true,
       "authors_display": "Nguyen, A.-T. P.; Hoang, V.-D.",
+      "signatures": [
+        "10.54644/jte.2024.1514",
+        "Code Evaluation System based on Abstract Syntax Tree",
+        "Anh-Tu Phuong Nguyen",
+        "jte.2024.1514"
+      ],
       "ojs": {
         "url": "https://jte.edu.vn/index.php/jte/article/view/1514",
         "status": 200,

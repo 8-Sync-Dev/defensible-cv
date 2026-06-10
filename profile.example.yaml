@@ -1,0 +1,105 @@
+# =============================================================================
+# profile.example.yaml — INPUT for the defensible-cv pipeline
+# =============================================================================
+#
+# This is the ONE file you fill in to generate a CV for a new person.
+#
+#   1. Copy it:           cp profile.example.yaml profile.yaml
+#   2. Fill every field   (delete the publications block if the person has none)
+#   3. Refresh metrics:   python scripts/research.py --no-scholar
+#   4. Ask the agent to write cv_data.yaml + render the PDF (see SKILL.md)
+#
+# The crawler (scripts/research.py) reads ONLY `research_sources`. The rest
+# (`identity`, `experience`, `education`, `projects`, `skills`) is the human
+# narrative the agent uses to write cv_data.yaml — the crawler ignores it.
+#
+# RULE: every NUMBER on the final CV must come from data/research.json, which is
+# produced from `research_sources` below. Anything you cannot point to a source
+# for, the agent must NOT put on the CV.
+# =============================================================================
+
+# --- Identity ---------------------------------------------------------------
+# Facts only the person knows. The agent copies these verbatim; never invents.
+identity:
+  name: Full Name                       # e.g. Jane Doe
+  headline: "Role · Focus · Focus"      # one line under the name
+  location: City, Country
+  email: you@example.com                # business/professional inbox preferred
+  phone: "+CC-NNN-NNN-NNNN"             # E.164, NO `tel:` prefix
+  website: https://example.com/          # full URL, or delete this line
+  social_networks:                       # network ∈ GitHub, YouTube, ORCID,
+    - {network: GitHub, username: your-handle}   #   LinkedIn, GoogleScholar, …
+    # - {network: LinkedIn, username: your-handle}
+    # - {network: ORCID, username: 0000-0000-0000-0000}
+
+# --- Research sources -------------------------------------------------------
+# THE ONLY SECTION THE CRAWLER READS. Provide at least github_user OR one
+# publication, otherwise the crawler stops (it has nothing to verify).
+research_sources:
+
+  # GitHub username/org whose public repos back the open-source claims.
+  # Set to null (or delete) if the person has no public GitHub footprint.
+  github_user: your-handle
+
+  # Each peer-reviewed paper to verify. Delete the whole list if none.
+  publications:
+    - key: short-unique-id              # any unique slug, e.g. jrnl-2024-0001
+      title: Exact Paper Title As Published
+      doi: 10.xxxx/xxxxx                # the canonical DOI (drives every lookup)
+      ojs_url: https://journal.example/article/view/NNN  # OJS page, or delete
+      journal: Full Journal Name
+      year: 2024
+      lead_author: true                 # true if this person is first author
+      authors_display: "Doe, J.; Smith, A."   # how authors print on the CV
+      # Literal substrings that uniquely identify THIS paper inside a CITING
+      # paper's PDF / reference list. Used to extract the exact sentence + page
+      # where another author invokes the work. Include the DOI + a distinctive
+      # title fragment + the lead author's name as it appears in references.
+      signatures:
+        - 10.xxxx/xxxxx
+        - Distinctive Title Fragment
+        - Doe Jane                        # author name as printed in references
+
+# --- Experience -------------------------------------------------------------
+# Human-written. Reverse-chronological. The agent tightens wording but never
+# fabricates companies, dates, or metrics.
+experience:
+  - company: Company Name
+    position: Job Title
+    start_date: 2024-01                 # YYYY-MM
+    end_date: present                   # YYYY-MM or `present`
+    location: City, Country
+    highlights:
+      - What you owned / shipped, with concrete impact.
+      - Another bullet. Numbers here (users, latency, %) are your claims — keep
+        them honest; only research-backed figures get the data/research.json tie.
+
+# --- Education --------------------------------------------------------------
+education:
+  - institution: University Name
+    area: Field of Study
+    degree: BS                          # BS, MS, PhD, …
+    start_date: 2020-09
+    end_date: 2024-06
+    location: City, Country
+    summary: "GPA, honors, thesis — optional."
+    highlights:
+      - "Thesis / award / relevant detail — optional."
+
+# --- Projects ---------------------------------------------------------------
+# Open-source or notable work. If a project is a GitHub repo under github_user,
+# its star/fork counts will be in data/research.json — surface them on the CV.
+projects:
+  - name: "[project-name](https://github.com/your-handle/project-name)"
+    date: "2024 – present"
+    summary: "One-line what-it-is."
+    highlights:
+      - Key technical detail.
+
+# --- Skills -----------------------------------------------------------------
+# Grouped one-liners. label = category, details = comma-separated list.
+skills:
+  - label: Languages
+    details: Python, TypeScript, SQL
+  - label: Backend
+    details: FastAPI, PostgreSQL, Docker

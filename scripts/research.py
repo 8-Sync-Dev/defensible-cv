@@ -33,6 +33,7 @@ import urllib.parse
 import urllib.request
 from datetime import datetime, timezone
 from typing import Any, Iterable
+import yaml
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 DATA_DIR = ROOT / "data"
@@ -41,32 +42,40 @@ CACHE_TTL_SECONDS = 24 * 60 * 60  # 24h
 
 USER_AGENT = "cv-research-crawler/1.0 (+https://github.com/8syncdev)"
 
-# ---- Tracked claims ---------------------------------------------------------
+# ---- Profile loading --------------------------------------------------------
+#
+# The crawler is PROFILE-DRIVEN: identity and research sources live in a YAML
+# profile (default `profile.yaml`), never hardcoded. This keeps the script
+# reusable for any person — fill `profile.example.yaml`, point `--profile` at
+# it, and the same pipeline researches their footprint.
 
-PUBLICATIONS: list[dict[str, Any]] = [
-    {
-        "key": "jte-2025-1661",
-        "title": "Sentiment Prediction Based on Deep Learning for Intelligent E-Learning Systems",
-        "doi": "10.54644/jte.2025.1661",
-        "ojs_url": "https://jte.edu.vn/index.php/jte/article/view/1661",
-        "journal": "Journal of Technical Education Science (JTE)",
-        "year": 2025,
-        "lead_author": True,
-        "authors_display": "Nguyen, A.-T. P.; Duong, D.-K.; Hoang, V.-D.",
-    },
-    {
-        "key": "jte-2024-1514",
-        "title": "Development of Code Evaluation System based on Abstract Syntax Tree",
-        "doi": "10.54644/jte.2024.1514",
-        "ojs_url": "https://jte.edu.vn/index.php/jte/article/view/1514",
-        "journal": "Journal of Technical Education Science (JTE)",
-        "year": 2024,
-        "lead_author": True,
-        "authors_display": "Nguyen, A.-T. P.; Hoang, V.-D.",
-    },
-]
+DEFAULT_PROFILE_PATH = ROOT / "profile.yaml"
 
-GITHUB_USER = "8syncdev"
+
+def load_profile(path: pathlib.Path) -> dict[str, Any]:
+    """Load the person-specific profile that drives the crawler.
+
+    The profile is the single source of identity + research sources. Without it
+    the crawler has nothing to research, so this is a hard stop (exit 2) with a
+    pointer to the template — never a silent fallback to someone else's data.
+    """
+    if not path.exists():
+        sys.stderr.write(
+            f"ERROR: profile not found at {path}\n"
+            "  This crawler is profile-driven. Copy the template and fill it in:\n"
+            f"      cp profile.example.yaml {path.name}\n"
+            "  then set research_sources.github_user and research_sources.publications.\n"
+        )
+        raise SystemExit(2)
+    profile = yaml.safe_load(path.read_text(encoding="utf-8")) or {}
+    rs = profile.get("research_sources") or {}
+    if not rs.get("github_user") and not rs.get("publications"):
+        sys.stderr.write(
+            f"ERROR: {path} defines no research_sources.github_user or .publications.\n"
+            "  Fill at least one so the crawler has something to verify.\n"
+        )
+        raise SystemExit(2)
+    return profile
 
 # Venue / DOI-prefix → publisher label, used to flag "high-impact" citing papers
 # so a recruiter can see a citation is e.g. an IEEE or ACM paper at a glance.
@@ -195,21 +204,10 @@ BROWSER_UA = (
     "(KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
 )
 
-# Strings that uniquely identify our papers in another author's reference list.
-# Each entry: (our_doi → list of literal substrings to search for).
-OUR_PAPER_SIGNATURES: dict[str, list[str]] = {
-    "10.54644/jte.2024.1514": [
-        "10.54644/jte.2024.1514",
-        "Code Evaluation System based on Abstract Syntax Tree",
-        "Anh-Tu Phuong Nguyen",
-        "jte.2024.1514",
-    ],
-    "10.54644/jte.2025.1661": [
-        "10.54644/jte.2025.1661",
-        "Sentiment Prediction Based on Deep Learning for Intelligent E-Learning",
-        "jte.2025.1661",
-    ],
-}
+# Substrings that identify each tracked paper inside another author's PDF /
+# reference list. Populated at runtime from the profile's publications
+# (`research_sources.publications[].signatures`); empty until `collect()` runs.
+OUR_PAPER_SIGNATURES: dict[str, list[str]] = {}
 
 
 def http_get_bytes(url: str, *, refresh: bool = False) -> tuple[int, bytes]:
@@ -727,10 +725,24 @@ def rank_citing_papers(citations: Iterable[dict[str, Any]]) -> list[dict[str, An
 # ---- Orchestration ---------------------------------------------------------
 
 
-def collect(*, refresh: bool, scholar: bool) -> dict[str, Any]:
+def collect(*, refresh: bool, scholar: bool, profile: dict[str, Any]) -> dict[str, Any]:
+    sources = profile.get("research_sources") or {}
+    publications = sources.get("publications") or []
+    github_user = sources.get("github_user")
+
+    # Populate the module-global signature map from the profile so the PDF
+    # citation-context matcher knows what substrings identify each paper.
+    OUR_PAPER_SIGNATURES.clear()
+    for pub in publications:
+        OUR_PAPER_SIGNATURES[pub["doi"]] = pub.get("signatures") or [pub["doi"]]
+
     pubs_out = []
-    for pub in PUBLICATIONS:
-        ojs = fetch_ojs_downloads(pub["ojs_url"], refresh=refresh)
+    for pub in publications:
+        ojs = (
+            fetch_ojs_downloads(pub["ojs_url"], refresh=refresh)
+            if pub.get("ojs_url")
+            else {"url": None, "status": None, "downloads_int": None, "downloads_raw": None}
+        )
         s2 = fetch_semantic_scholar(pub["doi"], refresh=refresh)
         oc = fetch_opencitations(pub["doi"], refresh=refresh)
         ev = fetch_crossref_events(pub["doi"], refresh=refresh)
@@ -754,10 +766,11 @@ def collect(*, refresh: bool, scholar: bool) -> dict[str, Any]:
             }
         )
 
-    gh = fetch_github(GITHUB_USER, refresh=refresh)
+    gh = fetch_github(github_user, refresh=refresh) if github_user else {"available": False, "status": None}
 
     return {
         "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+        "name": (profile.get("identity") or {}).get("name", ""),
         "publications": pubs_out,
         "github": gh,
     }
@@ -768,7 +781,8 @@ def collect(*, refresh: bool, scholar: bool) -> dict[str, Any]:
 
 def render_markdown(snapshot: dict[str, Any]) -> str:
     out: list[str] = []
-    out.append("# Research metrics — Nguyễn Phương Anh Tú")
+    name = snapshot.get("name") or "candidate"
+    out.append(f"# Research metrics — {name}")
     out.append(f"_Last refreshed: {snapshot['generated_at']}_")
     out.append("")
     out.append("## Publications")
@@ -776,8 +790,10 @@ def render_markdown(snapshot: dict[str, Any]) -> str:
         out.append("")
         out.append(f"### {pub['title']}")
         out.append(f"- DOI: [{pub['doi']}](https://doi.org/{pub['doi']})")
-        out.append(f"- Journal: {pub['journal']} ({pub['year']})")
-        out.append(f"- Authors: {pub['authors_display']}")
+        if pub.get("journal"):
+            out.append(f"- Journal: {pub['journal']} ({pub.get('year', 'n.d.')})")
+        if pub.get("authors_display"):
+            out.append(f"- Authors: {pub['authors_display']}")
         dl = pub["ojs"]
         if dl.get("downloads_int") is not None:
             out.append(f"- OJS downloads: **{dl['downloads_int']:,}** (raw `{dl['downloads_raw']}`)")
@@ -895,10 +911,12 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--print", action="store_true", dest="do_print", help="Print recruiter summary to stdout.")
     p.add_argument("--out-json", default=str(DATA_DIR / "research.json"))
     p.add_argument("--out-md", default=str(DATA_DIR / "research.md"))
+    p.add_argument("--profile", default=str(DEFAULT_PROFILE_PATH), help="Path to the person profile YAML (default: profile.yaml).")
     args = p.parse_args(argv)
 
+    profile = load_profile(pathlib.Path(args.profile))
     DATA_DIR.mkdir(parents=True, exist_ok=True)
-    snapshot = collect(refresh=args.refresh, scholar=not args.no_scholar)
+    snapshot = collect(refresh=args.refresh, scholar=not args.no_scholar, profile=profile)
 
     pathlib.Path(args.out_json).write_text(json.dumps(snapshot, indent=2, ensure_ascii=False))
     md = render_markdown(snapshot)
