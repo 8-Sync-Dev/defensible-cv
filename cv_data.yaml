@@ -8,7 +8,7 @@
 # defensible against a live recruiter check.
 cv:
   name: Nguyễn Phương Anh Tú
-  headline: AI Engineer · CRM AI · LLM Systems · Open-Source Author
+  headline: AI Engineer · Founder of 8 Sync Dev · CRM AI · LLM Systems
   location: Ho Chi Minh City, Vietnam
   email: atus@8syncdev.com
   phone: "+84-768-691-901"
@@ -20,6 +20,10 @@ cv:
       username: Dev8Sync
     - network: ORCID
       username: 0009-0005-9352-9353
+  custom_connections:
+    - fontawesome_icon: tiktok
+      placeholder: "@8syncdev"
+      url: https://www.tiktok.com/@8syncdev
 
   sections:
     summary:
@@ -62,10 +66,11 @@ cv:
         end_date: present
         location: Ho Chi Minh City, Vietnam
         highlights:
-          - Run an AI-powered tech-education platform concurrently with CloudGO.
-            Operate **[8syncdev.com](https://8syncdev.com/)** and the
-            **[Dev8Sync](https://www.youtube.com/@Dev8Sync)** channel (Next.js +
-            Django + PyTorch).
+          - Founder of the **8 Sync Dev** developer-education brand — operate
+            **[8syncdev.com](https://8syncdev.com/)**, the
+            **[Dev8Sync](https://www.youtube.com/@Dev8Sync)** YouTube channel,
+            and **[@8syncdev](https://www.tiktok.com/@8syncdev)** on TikTok
+            (Next.js + Django + PyTorch), concurrently with CloudGO.
           - Maintain **60 public repositories** with **177 followers** and
             **54 aggregate stars / 34 forks** across 50 non-fork projects on
             GitHub [`@8syncdev`](https://github.com/8syncdev).

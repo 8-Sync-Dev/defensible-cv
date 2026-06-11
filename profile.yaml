@@ -9,7 +9,7 @@
 
 identity:
   name: Nguyễn Phương Anh Tú
-  headline: AI Engineer · CRM AI · LLM Systems · Open-Source Author
+  headline: AI Engineer · Founder of 8 Sync Dev · CRM AI · LLM Systems
   location: Ho Chi Minh City, Vietnam
   email: atus@8syncdev.com
   phone: "+84-768-691-901"
@@ -18,6 +18,8 @@ identity:
     - {network: GitHub, username: 8syncdev}
     - {network: YouTube, username: Dev8Sync}
     - {network: ORCID, username: 0009-0005-9352-9353}
+  custom_connections:
+    - {fontawesome_icon: tiktok, placeholder: "@8syncdev", url: "https://www.tiktok.com/@8syncdev"}
 
 research_sources:
   github_user: 8syncdev
@@ -66,7 +68,7 @@ experience:
     end_date: present
     location: Ho Chi Minh City, Vietnam
     highlights:
-      - Run an AI-powered tech-education platform concurrently with CloudGO. Operate 8syncdev.com and the Dev8Sync channel (Next.js + Django + PyTorch).
+      - Founder of the 8 Sync Dev developer-education brand — operate 8syncdev.com, the Dev8Sync YouTube channel, and @8syncdev on TikTok (Next.js + Django + PyTorch), concurrently with CloudGO.
       - Maintain 60 public repositories with followers and aggregate stars/forks across non-fork projects (live counts in data/research.json).
       - Shipped ollama-docker-web-application — a one-command local LLM agent platform (Ollama + Docker + web UI).
       - Architected ELP-CMP, an enterprise e-learning platform with microservices in Next.js 15, FastAPI, PostgreSQL, MongoDB, and Redis; real-time sentiment analytics and AST-based code grading bundled in.
