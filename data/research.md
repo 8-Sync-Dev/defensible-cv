@@ -1,5 +1,5 @@
 # Research metrics — Nguyễn Phương Anh Tú
-_Last refreshed: 2026-06-10T02:01:12+00:00_
+_Last refreshed: 2026-06-11T09:10:46+00:00_
 
 ## Publications
 
@@ -7,15 +7,15 @@ _Last refreshed: 2026-06-10T02:01:12+00:00_
 - DOI: [10.54644/jte.2025.1661](https://doi.org/10.54644/jte.2025.1661)
 - Journal: Journal of Technical Education Science (JTE) (2025)
 - Authors: Nguyen, A.-T. P.; Duong, D.-K.; Hoang, V.-D.
-- OJS downloads: **268** (raw `268`)
-- Citations: **0** (Semantic Scholar) · **0** (OpenCitations) · n/a (Google Scholar — skipped (--no-scholar))
+- OJS downloads: **269** (raw `269`)
+- Citations: n/a (Semantic Scholar) · **0** (OpenCitations) · n/a (Google Scholar — skipped (--no-scholar))
 - Citing papers with extracted in-text excerpts: **0 of 0** (others paywalled or not in Unpaywall).
 
 ### Development of Code Evaluation System based on Abstract Syntax Tree
 - DOI: [10.54644/jte.2024.1514](https://doi.org/10.54644/jte.2024.1514)
 - Journal: Journal of Technical Education Science (JTE) (2024)
 - Authors: Nguyen, A.-T. P.; Hoang, V.-D.
-- OJS downloads: **1,094** (raw `1.1K`)
+- OJS downloads: **1,099** (raw `1.1K`)
 - Citations: **13** (Semantic Scholar) · **5** (OpenCitations) · n/a (Google Scholar — skipped (--no-scholar))
 - Citing papers with extracted in-text excerpts: **6 of 13** (others paywalled or not in Unpaywall).
 
@@ -100,11 +100,10 @@ _Last refreshed: 2026-06-10T02:01:12+00:00_
 
 
 ## Open-source impact
-- User [`@8syncdev`](https://github.com/8syncdev) — **106★** · **63** forks · 51 non-fork repos · 60 public total · 177 followers
+- User [`@8syncdev`](https://github.com/8syncdev) — **54★** · **34** forks · 50 non-fork repos · 60 public total · 177 followers
 - Location: TP HCM · Hireable: True
 
 ### Top repositories
-- [py-cursor-helpers](https://github.com/8syncdev/py-cursor-helpers) — **52★ / 29F** · Python — Giải Pháp Reset Cursor Chuyên Nghiệp
 - [ollama-docker-web-application](https://github.com/8syncdev/ollama-docker-web-application) — **31★ / 15F** · Jupyter Notebook — Xây dựng AI Agent Website
 - [ai-agent-fletui](https://github.com/8syncdev/ai-agent-fletui) — **4★ / 4F** · Python — A modern chat interface application that connects to Ollama LLM models, built with Flet framework.
 - [edu-mobile-app-flet](https://github.com/8syncdev/edu-mobile-app-flet) — **4★ / 2F** · Python — Building Edu Programing Courses Mobile App using Flet Framework
@@ -114,7 +113,8 @@ _Last refreshed: 2026-06-10T02:01:12+00:00_
 - [livestream-tutorial-course-hf](https://github.com/8syncdev/livestream-tutorial-course-hf) — **1★ / 1F** · Python — 
 - [nxn-8-puzzle-a-star-flet-ui](https://github.com/8syncdev/nxn-8-puzzle-a-star-flet-ui) — **1★ / 0F** · Python — Dự án này là một trò chơi puzzle được phát triển bằng Python, tích hợp thuật toán tìm đường A* (A Star) và giao diện người dùng được xây dựng bằng công nghệ Flet UI. Trò chơi này không chỉ mang tính giải trí mà còn minh họa cách áp dụng thuật toán AI vào một ứng dụng thực tế.
 - [christmas-tree-2025](https://github.com/8syncdev/christmas-tree-2025) — **1★ / 0F** · HTML — 
+- [8syncdev](https://github.com/8syncdev/8syncdev) — **1★ / 0F** — 
 
 ### Language footprint
-Python (22), HTML (8), JavaScript (6), TypeScript (5), CSS (3), Jupyter Notebook (2), Java (2)
+Python (21), HTML (8), JavaScript (6), TypeScript (5), CSS (3), Jupyter Notebook (2), Java (2)
 

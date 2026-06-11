@@ -11,7 +11,7 @@ cv:
   headline: AI Engineer · CRM AI · LLM Systems · Open-Source Author
   location: Ho Chi Minh City, Vietnam
   email: atus@8syncdev.com
-  phone: "+84-703-930-513"
+  phone: "+84-768-691-901"
   website: https://8syncdev.com/
   social_networks:
     - network: GitHub
@@ -28,10 +28,10 @@ cv:
         scoring, customer segmentation, sentiment analysis on email & call
         transcripts, churn prediction, and 24/7 LLM chatbots.
       - Founder of **8 Sync Dev** — published researcher with 2 JTE papers,
-        **1,362 combined downloads**, **13 citations**, cited at ACM UMAP
+        **1,368 combined downloads**, **13 citations**, cited at ACM UMAP
         2025 [ref 19] and arXiv ReCatcher 2025 [ref 43] for AST-based code
-        evaluation. Author of `py-cursor-helpers` (**52★ / 29F**) in the
-        global Cursor IDE community; **106★ across 51 original repos** under
+        evaluation. Author of `ollama-docker-web-application` (**31★ / 15F**),
+        a local LLM agent platform; **54★ across 50 public repos** under
         [`@8syncdev`](https://github.com/8syncdev).
     experience:
       - company: CloudGO (CloudPro CRM)
@@ -67,12 +67,10 @@ cv:
             **[Dev8Sync](https://www.youtube.com/@Dev8Sync)** channel (Next.js +
             Django + PyTorch).
           - Maintain **60 public repositories** with **177 followers** and
-            **106 aggregate stars / 63 forks** across 51 non-fork projects on
+            **54 aggregate stars / 34 forks** across 50 non-fork projects on
             GitHub [`@8syncdev`](https://github.com/8syncdev).
-          - Shipped **`py-cursor-helpers`** (Cursor IDE workspace reset &
-            security toolkit) — **52★ / 29F**, featured across Cursor
-            communities globally — and **`ollama-docker-web-application`**
-            (local LLM agent platform on Docker) — **31★ / 15F**.
+          - Shipped **`ollama-docker-web-application`** — a one-command local
+            LLM agent platform (Ollama + Docker + web UI) — **31★ / 15F**.
           - Architected **ELP-CMP**, an enterprise e-learning platform with
             microservices in Next.js 15, FastAPI, PostgreSQL, MongoDB, and Redis;
             real-time sentiment analytics and AST-based code grading bundled in.
@@ -108,7 +106,7 @@ cv:
         date: 2025
         summary: >-
           RoBERTa-based sentiment model for adaptive feedback in e-learning
-          systems. **268** OJS downloads. Lead author; advisor: Assoc. Prof.
+          systems. **269** OJS downloads. Lead author; advisor: Assoc. Prof.
           Van-Dung Hoang.
       - title: 'Development of Code Evaluation System based on Abstract Syntax Tree'
         authors:
@@ -119,7 +117,7 @@ cv:
         date: 2024
         summary: >-
           AST-based static + semantic grader for programming-education
-          workflows. **1,094** OJS downloads, **13** Semantic Scholar
+          workflows. **1,099** OJS downloads, **13** Semantic Scholar
           citations (5 OpenCitations). Adopted in production: **ACM UMAP
           2025** [ref 19, p.2] cites it for "ASTs widely used in automated
           code analysis"; **arXiv ReCatcher 2025** [ref 43, p.7] cites it as
@@ -134,18 +132,9 @@ cv:
           analytics for student-facing feedback.
         highlights:
           - Designed the AST-grading service that backs the JTE 2024 paper
-            (1,094 downloads · 13 citations).
+            (1,099 downloads · 13 citations).
           - Built RAG-powered tutor module on top of OpenAI / Qwen / Ollama with
             pgvector retrieval over course materials.
-      - name: '[py-cursor-helpers](https://github.com/8syncdev/py-cursor-helpers)'
-        date: '2024 – present'
-        summary: >-
-          Cursor IDE workspace reset and security toolkit, published on
-          PyPI/GitHub. **52★ / 29F**, adopted across the global Cursor community.
-        highlights:
-          - Single-binary CLI (Python) with cross-platform install path detection.
-          - Top-stars repository under `@8syncdev`; trending in Cursor IDE
-            user channels.
       - name: '[ollama-docker-web-application](https://github.com/8syncdev/ollama-docker-web-application)'
         date: '2024 – present'
         summary: >-

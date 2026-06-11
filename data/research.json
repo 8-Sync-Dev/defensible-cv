@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-10T02:01:12+00:00",
+  "generated_at": "2026-06-11T09:10:46+00:00",
   "name": "Nguyễn Phương Anh Tú",
   "publications": [
     {
@@ -19,23 +19,13 @@
       "ojs": {
         "url": "https://jte.edu.vn/index.php/jte/article/view/1661",
         "status": 200,
-        "downloads_int": 268,
-        "downloads_raw": "268"
+        "downloads_int": 269,
+        "downloads_raw": "269"
       },
       "semantic_scholar": {
-        "status": 200,
-        "available": true,
-        "paper_id": "c71145c10938364f23d6a65d2af54c9a9dca26df",
-        "title": "Sentiment Prediction Based on Deep Learning for Intelligent E-Learning Systems",
-        "year": 2025,
-        "venue": "Journal of Technical Education Science",
-        "citation_count": 0,
-        "influential_citation_count": 0,
-        "authors": [
-          "Anh-Tu Phuong Nguyen",
-          "Duc-Khai Duong",
-          "Van-Dung Hoang"
-        ],
+        "status": 429,
+        "available": false,
+        "raw": "{\"message\": \"Too Many Requests. Please wait and try again or apply for a key for higher rate limits. https://www.semanticscholar.org/product/api#api-key-form\", \"code\": \"429\"}",
         "citing_papers": []
       },
       "opencitations": {
@@ -71,7 +61,7 @@
       "ojs": {
         "url": "https://jte.edu.vn/index.php/jte/article/view/1514",
         "status": 200,
-        "downloads_int": 1094,
+        "downloads_int": 1099,
         "downloads_raw": "1.1K"
       },
       "semantic_scholar": {
@@ -509,7 +499,7 @@
     "available": true,
     "login": "8syncdev",
     "name": "Alex Nguyễn",
-    "bio": "Contact : 0703930513\r\nName: Nguyễn Phương Anh Tú\r\nMajor: Fullstack Developer\r\nTech Stack: Django (BE), Nextjs(FE), Flutter (Mobile), AI/ML: Pytorch, Game",
+    "bio": "Contact : 0768691901\r\nName: Nguyễn Phương Anh Tú\r\nMajor: Fullstack Developer\r\nTech Stack: Django (BE), Nextjs(FE), Flutter (Mobile), AI/ML: Pytorch, Game",
     "location": "TP HCM",
     "public_repos": 60,
     "followers": 177,
@@ -518,29 +508,11 @@
     "created_at": "2022-10-06T14:18:02Z",
     "html_url": "https://github.com/8syncdev",
     "totals": {
-      "stars": 106,
-      "forks": 63,
-      "non_fork_repos": 51
+      "stars": 54,
+      "forks": 34,
+      "non_fork_repos": 50
     },
     "top_repos": [
-      {
-        "name": "py-cursor-helpers",
-        "full_name": "8syncdev/py-cursor-helpers",
-        "description": "Giải Pháp Reset Cursor Chuyên Nghiệp",
-        "stars": 52,
-        "forks": 29,
-        "watchers": 52,
-        "language": "Python",
-        "topics": [
-          "bypass",
-          "cursor",
-          "python",
-          "tools"
-        ],
-        "url": "https://github.com/8syncdev/py-cursor-helpers",
-        "updated_at": "2026-01-18T03:07:07Z",
-        "archived": false
-      },
       {
         "name": "ollama-docker-web-application",
         "full_name": "8syncdev/ollama-docker-web-application",
@@ -695,27 +667,22 @@
         "url": "https://github.com/8syncdev/christmas-tree-2025",
         "updated_at": "2025-12-28T13:44:48Z",
         "archived": false
+      },
+      {
+        "name": "8syncdev",
+        "full_name": "8syncdev/8syncdev",
+        "description": null,
+        "stars": 1,
+        "forks": 0,
+        "watchers": 1,
+        "language": null,
+        "topics": [],
+        "url": "https://github.com/8syncdev/8syncdev",
+        "updated_at": "2025-07-22T20:12:31Z",
+        "archived": false
       }
     ],
     "all_repos": [
-      {
-        "name": "py-cursor-helpers",
-        "full_name": "8syncdev/py-cursor-helpers",
-        "description": "Giải Pháp Reset Cursor Chuyên Nghiệp",
-        "stars": 52,
-        "forks": 29,
-        "watchers": 52,
-        "language": "Python",
-        "topics": [
-          "bypass",
-          "cursor",
-          "python",
-          "tools"
-        ],
-        "url": "https://github.com/8syncdev/py-cursor-helpers",
-        "updated_at": "2026-01-18T03:07:07Z",
-        "archived": false
-      },
       {
         "name": "ollama-docker-web-application",
         "full_name": "8syncdev/ollama-docker-web-application",
@@ -1418,7 +1385,7 @@
     "languages": [
       [
         "Python",
-        22
+        21
       ],
       [
         "HTML",

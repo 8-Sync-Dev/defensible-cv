@@ -1,112 +1,110 @@
-# CV — Nguyễn Phương Anh Tú
+<p align="center">
+  <img src="assets/cv-preview.png" alt="Defensible CV — preview" width="100%">
+</p>
 
-Source of truth for my CV — and a reusable, profile-driven pipeline that builds
-a defensible developer CV for **anyone**. Four things live in this repo:
+<h1 align="center">defensible-cv</h1>
 
-1. **`profile.yaml`** — the single input file: identity + research sources +
-   experience/education/skills. The crawler reads its `research_sources`; the CV
-   is authored from the rest. Copy **`profile.example.yaml`** to start a new one.
-2. **`cv_data.yaml`** — [rendercv](https://docs.rendercv.com) source, written from
-   `profile.yaml` + verified numbers. Render this to PDF.
-3. **`scripts/research.py`** — refreshes verifiable metrics the CV cites
-   (publication downloads, citation counts and citing-paper list, GitHub
-   stars/forks). Output is committed at `data/research.{json,md}` so the CV
-   numbers stay defensible against a live recruiter check.
-4. **`agents/skills/defensible-cv/SKILL.md`** — the agent playbook. Any AI coding
-   agent that reads `SKILL.md` files auto-discovers it; its `description` fires
-   when you ask the agent to build/edit the CV, refresh metrics, or render — and
-   it **stops to ask for `profile.yaml`** if one isn't present.
+<p align="center">
+  <b>English</b> · <a href="README.vi.md">Tiếng Việt</a>
+</p>
 
-## Quickstart
+<p align="center">
+  A profile-driven pipeline that turns one input file into a recruiter-ready,
+  2-page developer CV PDF — where <b>every number is verified live</b>
+  (publication downloads, citations, GitHub stars/forks) and committed as proof.
+</p>
 
-```bash
-python -m venv .venv
-.venv/bin/pip install -r requirements.txt
+---
 
-# Refresh metrics (data/research.{json,md}). Friendly to public APIs:
-# caches each URL for 24h under data/.cache and backs off on 429.
-.venv/bin/python scripts/research.py            # full refresh + Scholar (optional dep)
-.venv/bin/python scripts/research.py --no-scholar   # skip Scholar (CI default)
-.venv/bin/python scripts/research.py --refresh      # bypass cache
-.venv/bin/python scripts/research.py --print        # also print summary to stdout
+## What this is
 
-# Render the CV to PDF — canonical path, no venv needed
-uv run --with "rendercv[full]>=2.8" rendercv render cv_data.yaml
+You fill in **`profile.yaml`** (identity + research sources + experience). A
+Python crawler verifies the metrics against live public APIs and writes
+`data/research.{json,md}`. Then the CV is authored into `cv_data.yaml`
+([rendercv](https://docs.rendercv.com)) and rendered to a clean 2-page PDF.
 
-# …or, inside the venv created above:
-.venv/bin/rendercv render cv_data.yaml
+```
+profile.yaml  ──►  scripts/research.py  ──►  data/research.json + research.md
+                                                      │
+                                                      ▼
+                                  cv_data.yaml  ──►  rendercv  ──►  PDF (2 pages)
 ```
 
-## Generate a CV for someone else
+Sample output: **[`assets/Nguyen_Phuong_Anh_Tu_CV.pdf`](assets/Nguyen_Phuong_Anh_Tu_CV.pdf)**.
 
-The whole repo is profile-driven, so reusing it for another person is three steps:
+## Use it with an AI agent (recommended)
+
+This repo is built around an **agent skill**. Open it in any AI coding agent
+that reads `AGENTS.md` / `SKILL.md` files (Claude, Cursor, …). The agent reads
+[`AGENTS.md`](AGENTS.md) → [`agents/skills/defensible-cv/SKILL.md`](agents/skills/defensible-cv/SKILL.md),
+and **stops to ask for `profile.yaml` if it's missing** — it never invents your data.
+
+Then just ask, in plain language:
+
+**Build a CV for a new person** (no profile yet):
+
+> I want a developer CV. Here's my info — name: …, location: …, email: …,
+> GitHub: …, publications (DOIs): …, experience: …, education: …, skills: ….
+> Follow `AGENTS.md` + the defensible-cv skill: write `profile.yaml`, refresh the
+> metrics, author `cv_data.yaml`, and render the PDF.
+
+**Rebuild from an existing `profile.yaml`:**
+
+> Build the CV: follow `AGENTS.md` + the defensible-cv skill. Refresh metrics
+> from `profile.yaml`, then render the PDF.
+
+**Refresh the numbers only:**
+
+> Refresh the CV metrics and re-render the PDF.
+
+## Do it manually (no agent)
 
 ```bash
-cp profile.example.yaml profile.yaml   # then fill it in (identity + research_sources + narrative)
+# 1. Create your profile from the template, then fill it in
+cp profile.example.yaml profile.yaml
+
+# 2. Verify metrics (reads profile.yaml's research_sources; --no-scholar = CI-safe)
 uv run --with requests --with pyyaml --with pypdf \
-  python scripts/research.py --no-scholar   # verifies their GitHub + publications
-# then ask an agent (see SKILL.md) to author cv_data.yaml and render the PDF
+  python scripts/research.py --no-scholar      # --refresh bypasses 24h cache
+
+# 3. Render the CV to PDF (no venv needed)
+uv run --with "rendercv[full]>=2.8" rendercv render cv_data.yaml
 ```
 
-`scripts/research.py` reads **only** `profile.yaml`'s `research_sources`
-(GitHub username + publication DOIs/OJS URLs + per-paper match signatures). If
+`scripts/research.py` reads **only** `profile.yaml`'s `research_sources`. If
 `profile.yaml` is missing it stops with a clear message instead of inventing
-data — copy the template and fill it first. The committed `profile.yaml` /
-`cv_data.yaml` are a complete worked example.
+data. The committed `profile.yaml` / `cv_data.yaml` are a complete worked example.
 
-## Agent skill
+## How it stays defensible
 
-This repo ships an agent skill at **`agents/skills/defensible-cv/SKILL.md`** —
-the exact file name AI coding agents look for. You don't "run" it: an agent
-that indexes `SKILL.md` files loads it automatically, and its `description`
-makes it activate when you ask things like *"update the CV"*, *"refresh the
-citation numbers"*, or *"re-render the PDF"*.
-
-What it enforces so the output stays professional and defensible:
-
-- every number in `cv_data.yaml` must trace back to `data/research.json` — run
-  `scripts/research.py` first; never invent figures;
-- render with `uv run --with "rendercv[full]>=2.8" rendercv render cv_data.yaml`
-  and visually confirm the result stays **2 pages**;
-- known rendercv/typst traps (`;` dropped right after `**bold**`, the `tel:`
-  phone prefix, `|-` vs `>-` scalars) plus the spacing knobs that hold the
-  layout to two pages.
-
-**To use it:** open this repo in an agent that supports `SKILL.md` skills and
-ask in plain language. **To read it yourself:** open
-`agents/skills/defensible-cv/SKILL.md`.
-
-## What `research.py` checks
+Every figure on the CV is verified live, then committed to `data/research.json`
+so it survives a recruiter's spot-check:
 
 | Source | What it returns |
 | --- | --- |
-| OJS (jte.edu.vn) | Per-article download total, parsed from the inline `pkpUsageStats` payload. |
-| Semantic Scholar Graph API | Paper metadata + paginated citing-paper list with venue, year, authors, DOI. |
-| OpenCitations COCI/Meta | Independent citation count and citing DOIs (cross-checks Semantic Scholar). |
+| OJS (e.g. jte.edu.vn) | Per-article download total from the inline `pkpUsageStats` payload. |
+| Semantic Scholar Graph API | Paper metadata + paginated citing-paper list (venue, year, authors, DOI). |
+| OpenCitations COCI/Meta | Independent citation count + citing DOIs (cross-checks Semantic Scholar). |
 | Crossref Event Data | Twitter / Wikipedia / news mentions (best-effort). |
-| Google Scholar (`scholarly`) | Optional, soft-fails on CAPTCHA. Run with `--no-scholar` to skip. |
+| Google Scholar (`scholarly`) | Optional, soft-fails on CAPTCHA. `--no-scholar` skips it. |
 | GitHub Public API | Per-repo stars/forks, languages, totals across non-fork repos. |
-| **Citing-paper PDFs** (Unpaywall → arXiv → `pypdf`) | **Per open-access citing paper: downloads the PDF, parses per-page text, locates the reference label (`[19]`, `[43]`, `(Nguyen & Hoang, 2024)`, …) that points back to our work, and extracts the verbatim sentence + page number where the citing author actually invokes it.** |
-
-Citing papers are auto-tagged `[IEEE] / [ACM] / [Elsevier] / [Springer] / [Nature] / [MDPI]`
-by DOI prefix so a recruiter glancing at `data/research.md` can see at once that
-the work is being cited at top venues.
+| **Citing-paper PDFs** (Unpaywall → arXiv → `pypdf`) | **Downloads each open-access citing paper, finds the reference label that points back to the work, and extracts the verbatim sentence + page where the author invokes it.** |
 
 ### Concrete citation contexts
 
-For every citing paper whose PDF is open-access, `data/research.md` lists:
+For every open-access citing paper, `data/research.md` records the reference
+label, the reference-list page, and the in-body sentence(s) that cite the work.
+Example from the committed run for `10.54644/jte.2024.1514`:
 
-- the reference label our work has in that paper (e.g. `[19]`, `[43]`),
-- the page of their reference list,
-- the actual sentence(s) in the body where the citing author *uses* our work, with body page numbers.
-
-Example produced by the current run for `10.54644/jte.2024.1514`:
-
-> **[ACM]** *Integrating Expert Knowledge With Automated Knowledge Component Extraction for Student Modeling* — ACM UMAP 2025
+> **[ACM]** *Integrating Expert Knowledge With Automated Knowledge Component
+> Extraction for Student Modeling* — ACM UMAP 2025
 > - Our paper is reference **[19]** (their p.6).
-> - p.2 — _"…ASTs have been widely used in automated code analysis efforts **[19]**. For example, Rivers used ASTs to identify each syntax structure in a student's submission…"_
+> - p.2 — *"…ASTs have been widely used in automated code analysis efforts **[19]**.
+>   For example, Rivers used ASTs to identify each syntax structure in a student's
+>   submission…"*
 
-Paywalled citing papers (most IEEE, parts of ACM, MDPI behind Akamai) are kept in the report with status `not_oa` or `fetch_failed` and clearly flagged so nothing looks fabricated.
+Paywalled papers (most IEEE, parts of ACM, MDPI behind Akamai) are kept with
+status `not_oa` / `fetch_failed` and clearly flagged — nothing is fabricated.
 
 ## Files
 
@@ -114,11 +112,16 @@ Paywalled citing papers (most IEEE, parts of ACM, MDPI behind Akamai) are kept i
 profile.yaml                 INPUT: identity + research sources + narrative
 profile.example.yaml         documented template — copy to profile.yaml
 cv_data.yaml                 rendercv source (authored from profile + research)
-scripts/research.py          CLI crawler, single file, urllib-only
-data/research.json           machine-readable snapshot (regenerated)
+scripts/research.py          CLI crawler, single file, urllib + pypdf
+data/research.json           machine-readable verified snapshot (regenerated)
 data/research.md             recruiter-friendly summary (regenerated)
-data/.cache/                 SHA1-keyed HTTP cache, 24h TTL
-data/.cache/pdfs/            binary PDF cache for citing-paper full-text
+AGENTS.md                    entry point for AI agents
+agents/skills/defensible-cv/SKILL.md   the agent playbook
+assets/cv-preview.png        the preview banner above
+assets/Nguyen_Phuong_Anh_Tu_CV.pdf     sample rendered CV
 requirements.txt             pinned deps
-agents/skills/defensible-cv/SKILL.md   agent playbook (auto-loaded by AI agents)
 ```
+
+## License
+
+[MIT](LICENSE).

@@ -12,7 +12,7 @@ identity:
   headline: AI Engineer · CRM AI · LLM Systems · Open-Source Author
   location: Ho Chi Minh City, Vietnam
   email: atus@8syncdev.com
-  phone: "+84-703-930-513"
+  phone: "+84-768-691-901"
   website: https://8syncdev.com/
   social_networks:
     - {network: GitHub, username: 8syncdev}
@@ -68,7 +68,7 @@ experience:
     highlights:
       - Run an AI-powered tech-education platform concurrently with CloudGO. Operate 8syncdev.com and the Dev8Sync channel (Next.js + Django + PyTorch).
       - Maintain 60 public repositories with followers and aggregate stars/forks across non-fork projects (live counts in data/research.json).
-      - Shipped py-cursor-helpers (Cursor IDE workspace reset & security toolkit) and ollama-docker-web-application (local LLM agent platform on Docker).
+      - Shipped ollama-docker-web-application — a one-command local LLM agent platform (Ollama + Docker + web UI).
       - Architected ELP-CMP, an enterprise e-learning platform with microservices in Next.js 15, FastAPI, PostgreSQL, MongoDB, and Redis; real-time sentiment analytics and AST-based code grading bundled in.
   - company: Fullhousedev
     position: Senior Programming Instructor & Platform Developer
@@ -105,12 +105,6 @@ projects:
     highlights:
       - Designed the AST-grading service that backs the JTE 2024 paper.
       - Built RAG-powered tutor module on top of OpenAI / Qwen / Ollama with pgvector retrieval over course materials.
-  - name: "[py-cursor-helpers](https://github.com/8syncdev/py-cursor-helpers)"
-    date: "2024 – present"
-    summary: "Cursor IDE workspace reset and security toolkit, published on PyPI/GitHub."
-    highlights:
-      - Single-binary CLI (Python) with cross-platform install path detection.
-      - Top-stars repository under @8syncdev; trending in Cursor IDE user channels.
   - name: "[ollama-docker-web-application](https://github.com/8syncdev/ollama-docker-web-application)"
     date: "2024 – present"
     summary: "Local LLM agent platform — Ollama + Docker + web UI, ready-to-run for self-hosted models."
