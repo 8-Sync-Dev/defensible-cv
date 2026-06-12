@@ -22,7 +22,7 @@ cv:
       username: 0009-0005-9352-9353
   custom_connections:
     - fontawesome_icon: tiktok
-      placeholder: "@8syncdev"
+      placeholder: "tiktok.com/@8syncdev"
       url: https://www.tiktok.com/@8syncdev
 
   sections:
