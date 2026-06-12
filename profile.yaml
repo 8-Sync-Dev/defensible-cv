@@ -11,7 +11,9 @@ identity:
   name: Nguyễn Phương Anh Tú
   headline: AI Engineer · Founder of 8 Sync Dev · CRM AI · LLM Systems
   location: Ho Chi Minh City, Vietnam
-  email: atus@8syncdev.com
+  email:
+    - atus@8syncdev.com        # organization
+    - 8sync.dev.1111@gmail.com  # personal
   phone: "+84-768-691-901"
   website: https://8syncdev.com/
   social_networks:
